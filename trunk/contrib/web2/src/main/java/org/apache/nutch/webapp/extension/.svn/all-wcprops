@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/481407/lucene/nutch/trunk/contrib/web2/src/main/java/org/apache/nutch/webapp/extension
+END
+PostSearchExtensionPoint.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/asf/!svn/ver/481407/lucene/nutch/trunk/contrib/web2/src/main/java/org/apache/nutch/webapp/extension/PostSearchExtensionPoint.java
+END
+PreSearchExtensionPoint.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/481407/lucene/nutch/trunk/contrib/web2/src/main/java/org/apache/nutch/webapp/extension/PreSearchExtensionPoint.java
+END
+UIExtensionPoint.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/481407/lucene/nutch/trunk/contrib/web2/src/main/java/org/apache/nutch/webapp/extension/UIExtensionPoint.java
+END
+SearchExtensionPoint.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/481407/lucene/nutch/trunk/contrib/web2/src/main/java/org/apache/nutch/webapp/extension/SearchExtensionPoint.java
+END

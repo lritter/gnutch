@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/481407/lucene/nutch/trunk/contrib/web2/src/main/java/org/apache/nutch/webapp/common
+END
+NavigationHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/481407/lucene/nutch/trunk/contrib/web2/src/main/java/org/apache/nutch/webapp/common/NavigationHelper.java
+END
+BaseSearch.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/481407/lucene/nutch/trunk/contrib/web2/src/main/java/org/apache/nutch/webapp/common/BaseSearch.java
+END
+Preferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/481407/lucene/nutch/trunk/contrib/web2/src/main/java/org/apache/nutch/webapp/common/Preferences.java
+END
+Startable.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/481407/lucene/nutch/trunk/contrib/web2/src/main/java/org/apache/nutch/webapp/common/Startable.java
+END
+ServiceLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/481407/lucene/nutch/trunk/contrib/web2/src/main/java/org/apache/nutch/webapp/common/ServiceLocator.java
+END
+WebAppModule.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/481407/lucene/nutch/trunk/contrib/web2/src/main/java/org/apache/nutch/webapp/common/WebAppModule.java
+END
+Search.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/481407/lucene/nutch/trunk/contrib/web2/src/main/java/org/apache/nutch/webapp/common/Search.java
+END
+web2_services.png
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/394550/lucene/nutch/trunk/contrib/web2/src/main/java/org/apache/nutch/webapp/common/web2_services.png
+END
+WebappInstanceServiceLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/asf/!svn/ver/481407/lucene/nutch/trunk/contrib/web2/src/main/java/org/apache/nutch/webapp/common/WebappInstanceServiceLocator.java
+END
+SearchForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/481407/lucene/nutch/trunk/contrib/web2/src/main/java/org/apache/nutch/webapp/common/SearchForm.java
+END
+SearchResultBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/481407/lucene/nutch/trunk/contrib/web2/src/main/java/org/apache/nutch/webapp/common/SearchResultBean.java
+END
+PluginResourceLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/481407/lucene/nutch/trunk/contrib/web2/src/main/java/org/apache/nutch/webapp/common/PluginResourceLoader.java
+END
+ServletContextServiceLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/asf/!svn/ver/481407/lucene/nutch/trunk/contrib/web2/src/main/java/org/apache/nutch/webapp/common/ServletContextServiceLocator.java
+END

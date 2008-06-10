@@ -1,0 +1,69 @@
+8
+
+dir
+665960
+http://svn.apache.org/repos/asf/lucene/nutch/trunk/src/web
+http://svn.apache.org/repos/asf
+
+
+
+2008-02-18T06:38:46.050280Z
+628631
+kubes
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+13f79535-47bb-0310-9956-ffa450edef68
+
+locale
+dir
+
+pages
+dir
+
+style
+dir
+
+include
+dir
+
+log4j.properties
+file
+
+
+
+
+2008-06-10T03:39:36.000000Z
+a3b0ba38ad945168f8da1d94181205ba
+2006-06-12T20:51:40.911862Z
+413742
+jerome
+has-props
+
+jsp
+dir
+
+web.xml
+file
+
+
+
+
+2008-06-10T03:39:36.000000Z
+c28b8aba0a166bc97aa66b003a303b77
+2007-06-21T15:15:32.865482Z
+549507
+dogacan
+has-props
+

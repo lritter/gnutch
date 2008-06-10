@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/asf/!svn/ver/399002/lucene/nutch/trunk/contrib/web2/lib
+END
+struts.jar
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/asf/!svn/ver/394550/lucene/nutch/trunk/contrib/web2/lib/struts.jar
+END
+commons-collections-3.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/394550/lucene/nutch/trunk/contrib/web2/lib/commons-collections-3.0.jar
+END
+jstl.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/asf/!svn/ver/399002/lucene/nutch/trunk/contrib/web2/lib/jstl.jar
+END
+commons-beanutils.jar
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/394550/lucene/nutch/trunk/contrib/web2/lib/commons-beanutils.jar
+END
+commons-digester.jar
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/asf/!svn/ver/394550/lucene/nutch/trunk/contrib/web2/lib/commons-digester.jar
+END
+standard.jar
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/asf/!svn/ver/399002/lucene/nutch/trunk/contrib/web2/lib/standard.jar
+END

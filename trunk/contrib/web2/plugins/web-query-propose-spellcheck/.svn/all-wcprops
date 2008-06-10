@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/546998/lucene/nutch/trunk/contrib/web2/plugins/web-query-propose-spellcheck
+END
+plugin.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/481437/lucene/nutch/trunk/contrib/web2/plugins/web-query-propose-spellcheck/plugin.xml
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/481437/lucene/nutch/trunk/contrib/web2/plugins/web-query-propose-spellcheck/build.xml
+END

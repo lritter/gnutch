@@ -1,0 +1,72 @@
+8
+
+dir
+665960
+http://svn.apache.org/repos/asf/lucene/nutch/trunk/src/java/org/apache/nutch/tools
+http://svn.apache.org/repos/asf
+
+
+
+2008-03-19T10:34:14.047577Z
+638779
+ab
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+13f79535-47bb-0310-9956-ffa450edef68
+
+PruneIndexTool.java
+file
+
+
+
+
+2008-06-10T03:39:31.000000Z
+535f8dbea1b5b5193016e93090337bb1
+2007-08-08T14:23:25.403275Z
+563894
+dogacan
+
+compat
+dir
+
+arc
+dir
+
+DmozParser.java
+file
+
+
+
+
+2008-06-10T03:39:31.000000Z
+197ebe91edc099627ae4279a98db9271
+2007-08-08T14:23:25.403275Z
+563894
+dogacan
+has-props
+
+FreeGenerator.java
+file
+
+
+
+
+2008-06-10T03:39:31.000000Z
+6b14ec30399898313e2302db67c591c6
+2008-03-19T10:34:14.047577Z
+638779
+ab
+has-props
+

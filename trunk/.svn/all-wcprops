@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/repos/asf/!svn/ver/663092/lucene/nutch/trunk
+END
+NOTICE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/asf/!svn/ver/409769/lucene/nutch/trunk/NOTICE.txt
+END
+default.properties
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/asf/!svn/ver/557342/lucene/nutch/trunk/default.properties
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/asf/!svn/ver/409769/lucene/nutch/trunk/LICENSE.txt
+END
+CHANGES.txt
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/asf/!svn/ver/663092/lucene/nutch/trunk/CHANGES.txt
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/asf/!svn/ver/179640/lucene/nutch/trunk/index.html
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/asf/!svn/ver/240452/lucene/nutch/trunk/README.txt
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repos/asf/!svn/ver/637837/lucene/nutch/trunk/build.xml
+END

@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/repos/asf/!svn/ver/627893/lucene/nutch/trunk/lib
+END
+commons-logging-api-1.0.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/asf/!svn/ver/517015/lucene/nutch/trunk/lib/commons-logging-api-1.0.4.jar
+END
+tika-0.1-incubating.jar
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/asf/!svn/ver/620811/lucene/nutch/trunk/lib/tika-0.1-incubating.jar
+END
+taglibs-i18n.tld
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/asf/!svn/ver/179640/lucene/nutch/trunk/lib/taglibs-i18n.tld
+END
+jets3t-0.5.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/asf/!svn/ver/520154/lucene/nutch/trunk/lib/jets3t-0.5.0.jar
+END
+commons-cli-2.0-SNAPSHOT.jar
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/asf/!svn/ver/424784/lucene/nutch/trunk/lib/commons-cli-2.0-SNAPSHOT.jar
+END
+jakarta-oro-2.0.7.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/asf/!svn/ver/517015/lucene/nutch/trunk/lib/jakarta-oro-2.0.7.jar
+END
+hadoop-0.16.0-core.jar
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/asf/!svn/ver/627893/lucene/nutch/trunk/lib/hadoop-0.16.0-core.jar
+END
+junit-3.8.1.LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/asf/!svn/ver/179640/lucene/nutch/trunk/lib/junit-3.8.1.LICENSE.txt
+END
+commons-httpclient-3.0.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/asf/!svn/ver/495392/lucene/nutch/trunk/lib/commons-httpclient-3.0.1.jar
+END
+commons-codec-1.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/asf/!svn/ver/495392/lucene/nutch/trunk/lib/commons-codec-1.3.jar
+END
+jetty-5.1.4.LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/asf/!svn/ver/375704/lucene/nutch/trunk/lib/jetty-5.1.4.LICENSE.txt
+END
+icu4j-3_6.LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/asf/!svn/ver/579656/lucene/nutch/trunk/lib/icu4j-3_6.LICENSE.txt
+END
+commons-lang-2.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/asf/!svn/ver/265794/lucene/nutch/trunk/lib/commons-lang-2.1.jar
+END
+xerces-2_6_2-apis.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/asf/!svn/ver/179640/lucene/nutch/trunk/lib/xerces-2_6_2-apis.jar
+END
+servlet-api.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/asf/!svn/ver/179640/lucene/nutch/trunk/lib/servlet-api.jar
+END
+commons-logging-1.0.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/asf/!svn/ver/501315/lucene/nutch/trunk/lib/commons-logging-1.0.4.jar
+END
+junit-3.8.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/asf/!svn/ver/179640/lucene/nutch/trunk/lib/junit-3.8.1.jar
+END
+xerces-2_6_2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/asf/!svn/ver/179640/lucene/nutch/trunk/lib/xerces-2_6_2.jar
+END
+log4j-1.2.13.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/asf/!svn/ver/411943/lucene/nutch/trunk/lib/log4j-1.2.13.jar
+END
+lucene-core-2.3.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/asf/!svn/ver/618975/lucene/nutch/trunk/lib/lucene-core-2.3.0.jar
+END
+jetty-5.1.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/asf/!svn/ver/375704/lucene/nutch/trunk/lib/jetty-5.1.4.jar
+END
+lucene-misc-2.3.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/asf/!svn/ver/618975/lucene/nutch/trunk/lib/lucene-misc-2.3.0.jar
+END
+taglibs-i18n.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/asf/!svn/ver/179640/lucene/nutch/trunk/lib/taglibs-i18n.jar
+END
+icu4j-3_6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/asf/!svn/ver/579656/lucene/nutch/trunk/lib/icu4j-3_6.jar
+END

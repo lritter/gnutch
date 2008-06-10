@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repos/asf/!svn/ver/620818/lucene/nutch/trunk/src/test
+END
+nutch-site.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/asf/!svn/ver/447940/lucene/nutch/trunk/src/test/nutch-site.xml
+END
+crawl-tests.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/asf/!svn/ver/550196/lucene/nutch/trunk/src/test/crawl-tests.xml
+END
+filter-all.txt
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/asf/!svn/ver/476879/lucene/nutch/trunk/src/test/filter-all.txt
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/asf/!svn/ver/413742/lucene/nutch/trunk/src/test/log4j.properties
+END

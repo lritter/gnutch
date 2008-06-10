@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/546998/lucene/nutch/trunk/contrib/web2/plugins/web-query-propose-spellcheck/src/java/org/apache/nutch/spell
+END
+SpellCheckerTerms.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/repos/asf/!svn/ver/473936/lucene/nutch/trunk/contrib/web2/plugins/web-query-propose-spellcheck/src/java/org/apache/nutch/spell/SpellCheckerTerms.java
+END
+SpellCheckerBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/repos/asf/!svn/ver/546998/lucene/nutch/trunk/contrib/web2/plugins/web-query-propose-spellcheck/src/java/org/apache/nutch/spell/SpellCheckerBean.java
+END
+NGramSpeller.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/asf/!svn/ver/473936/lucene/nutch/trunk/contrib/web2/plugins/web-query-propose-spellcheck/src/java/org/apache/nutch/spell/NGramSpeller.java
+END
+SpellCheckerTerm.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/repos/asf/!svn/ver/473936/lucene/nutch/trunk/contrib/web2/plugins/web-query-propose-spellcheck/src/java/org/apache/nutch/spell/SpellCheckerTerm.java
+END

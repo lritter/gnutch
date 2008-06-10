@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/473955/lucene/nutch/trunk/contrib/web2/plugins/web-clustering/src/java/org/apache/nutch/webapp/controller
+END
+ClusteringController.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/repos/asf/!svn/ver/473936/lucene/nutch/trunk/contrib/web2/plugins/web-clustering/src/java/org/apache/nutch/webapp/controller/ClusteringController.java
+END
+ClusteringCheckboxController.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/repos/asf/!svn/ver/473955/lucene/nutch/trunk/contrib/web2/plugins/web-clustering/src/java/org/apache/nutch/webapp/controller/ClusteringCheckboxController.java
+END

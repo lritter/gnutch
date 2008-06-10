@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/asf/!svn/ver/638779/lucene/nutch/trunk/src/java/org/apache/nutch/indexer
+END
+DeleteDuplicates.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/638779/lucene/nutch/trunk/src/java/org/apache/nutch/indexer/DeleteDuplicates.java
+END
+IndexingException.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/563894/lucene/nutch/trunk/src/java/org/apache/nutch/indexer/IndexingException.java
+END
+IndexSorter.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/638779/lucene/nutch/trunk/src/java/org/apache/nutch/indexer/IndexSorter.java
+END
+HighFreqTerms.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/473936/lucene/nutch/trunk/src/java/org/apache/nutch/indexer/HighFreqTerms.java
+END
+NutchSimilarity.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/563894/lucene/nutch/trunk/src/java/org/apache/nutch/indexer/NutchSimilarity.java
+END
+IndexMerger.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/638779/lucene/nutch/trunk/src/java/org/apache/nutch/indexer/IndexMerger.java
+END
+IndexingFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/536629/lucene/nutch/trunk/src/java/org/apache/nutch/indexer/IndexingFilter.java
+END
+FsDirectory.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/613378/lucene/nutch/trunk/src/java/org/apache/nutch/indexer/FsDirectory.java
+END
+Indexer.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/638779/lucene/nutch/trunk/src/java/org/apache/nutch/indexer/Indexer.java
+END
+IndexingFilters.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/589654/lucene/nutch/trunk/src/java/org/apache/nutch/indexer/IndexingFilters.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/179640/lucene/nutch/trunk/src/java/org/apache/nutch/indexer/package.html
+END

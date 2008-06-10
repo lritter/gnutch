@@ -1,0 +1,11 @@
+K 10
+svn:ignore
+V 51
+build
+logs
+nutch.jar
+.classpath
+.project
+.settings
+
+END

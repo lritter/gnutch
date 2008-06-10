@@ -1,0 +1,40 @@
+8
+
+dir
+665960
+http://svn.apache.org/repos/asf/lucene/nutch/trunk/src/plugin/subcollection/src/java/org/apache/nutch/indexer/subcollection
+http://svn.apache.org/repos/asf
+
+
+
+2006-11-12T11:37:02.988733Z
+473936
+siren
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+13f79535-47bb-0310-9956-ffa450edef68
+
+SubcollectionIndexingFilter.java
+file
+
+
+
+
+2008-06-10T03:40:11.000000Z
+3712b3b8271b79212b48f1ec3398eaa7
+2006-11-12T11:37:02.988733Z
+473936
+siren
+

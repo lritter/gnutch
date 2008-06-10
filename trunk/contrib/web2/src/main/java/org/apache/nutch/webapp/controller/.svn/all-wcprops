@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/481407/lucene/nutch/trunk/contrib/web2/src/main/java/org/apache/nutch/webapp/controller
+END
+I18NPageController.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/481407/lucene/nutch/trunk/contrib/web2/src/main/java/org/apache/nutch/webapp/controller/I18NPageController.java
+END
+AnchorsController.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/473936/lucene/nutch/trunk/contrib/web2/src/main/java/org/apache/nutch/webapp/controller/AnchorsController.java
+END
+ExplainController.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/473936/lucene/nutch/trunk/contrib/web2/src/main/java/org/apache/nutch/webapp/controller/ExplainController.java
+END
+NutchController.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/481407/lucene/nutch/trunk/contrib/web2/src/main/java/org/apache/nutch/webapp/controller/NutchController.java
+END
+PreferencesController.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/asf/!svn/ver/481407/lucene/nutch/trunk/contrib/web2/src/main/java/org/apache/nutch/webapp/controller/PreferencesController.java
+END
+SearchController.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/481407/lucene/nutch/trunk/contrib/web2/src/main/java/org/apache/nutch/webapp/controller/SearchController.java
+END
+CachedController.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/481407/lucene/nutch/trunk/contrib/web2/src/main/java/org/apache/nutch/webapp/controller/CachedController.java
+END

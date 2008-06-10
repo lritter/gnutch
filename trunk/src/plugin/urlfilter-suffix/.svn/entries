@@ -1,0 +1,57 @@
+8
+
+dir
+665960
+http://svn.apache.org/repos/asf/lucene/nutch/trunk/src/plugin/urlfilter-suffix
+http://svn.apache.org/repos/asf
+
+
+
+2007-06-18T18:13:15.106692Z
+548429
+dogacan
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+13f79535-47bb-0310-9956-ffa450edef68
+
+src
+dir
+
+plugin.xml
+file
+
+
+
+
+2008-06-10T03:39:49.000000Z
+ccc2fca8bb6d88541142f1e45c2f6535
+2007-01-19T16:17:32.719201Z
+497859
+siren
+has-props
+
+build.xml
+file
+
+
+
+
+2008-06-10T03:39:49.000000Z
+37633c13647502d5b493848672d77738
+2007-01-19T16:17:32.719201Z
+497859
+siren
+has-props
+

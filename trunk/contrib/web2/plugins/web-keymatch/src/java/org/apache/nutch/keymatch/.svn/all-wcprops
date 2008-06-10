@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/473936/lucene/nutch/trunk/contrib/web2/plugins/web-keymatch/src/java/org/apache/nutch/keymatch
+END
+ViewCountSorter.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/473936/lucene/nutch/trunk/contrib/web2/plugins/web-keymatch/src/java/org/apache/nutch/keymatch/ViewCountSorter.java
+END
+KeyMatch.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/473936/lucene/nutch/trunk/contrib/web2/plugins/web-keymatch/src/java/org/apache/nutch/keymatch/KeyMatch.java
+END
+SimpleKeyMatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/asf/!svn/ver/473936/lucene/nutch/trunk/contrib/web2/plugins/web-keymatch/src/java/org/apache/nutch/keymatch/SimpleKeyMatcher.java
+END
+AbstractFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/asf/!svn/ver/473936/lucene/nutch/trunk/contrib/web2/plugins/web-keymatch/src/java/org/apache/nutch/keymatch/AbstractFilter.java
+END
+KeyMatchFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/asf/!svn/ver/473936/lucene/nutch/trunk/contrib/web2/plugins/web-keymatch/src/java/org/apache/nutch/keymatch/KeyMatchFilter.java
+END
+CountFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/473936/lucene/nutch/trunk/contrib/web2/plugins/web-keymatch/src/java/org/apache/nutch/keymatch/CountFilter.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/411593/lucene/nutch/trunk/contrib/web2/plugins/web-keymatch/src/java/org/apache/nutch/keymatch/package.html
+END

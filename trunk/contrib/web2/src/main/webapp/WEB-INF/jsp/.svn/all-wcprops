@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/485149/lucene/nutch/trunk/contrib/web2/src/main/webapp/WEB-INF/jsp
+END
+search.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/481739/lucene/nutch/trunk/contrib/web2/src/main/webapp/WEB-INF/jsp/search.jsp
+END
+cached.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/481739/lucene/nutch/trunk/contrib/web2/src/main/webapp/WEB-INF/jsp/cached.jsp
+END
+common.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/481739/lucene/nutch/trunk/contrib/web2/src/main/webapp/WEB-INF/jsp/common.jsp
+END
+header.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/481739/lucene/nutch/trunk/contrib/web2/src/main/webapp/WEB-INF/jsp/header.jsp
+END
+i18ncontent.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/481739/lucene/nutch/trunk/contrib/web2/src/main/webapp/WEB-INF/jsp/i18ncontent.jsp
+END
+template.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/481739/lucene/nutch/trunk/contrib/web2/src/main/webapp/WEB-INF/jsp/template.jsp
+END
+anchors.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/481739/lucene/nutch/trunk/contrib/web2/src/main/webapp/WEB-INF/jsp/anchors.jsp
+END
+footer.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/481739/lucene/nutch/trunk/contrib/web2/src/main/webapp/WEB-INF/jsp/footer.jsp
+END
+navigate.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/481739/lucene/nutch/trunk/contrib/web2/src/main/webapp/WEB-INF/jsp/navigate.jsp
+END
+noResults.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/481739/lucene/nutch/trunk/contrib/web2/src/main/webapp/WEB-INF/jsp/noResults.jsp
+END
+explain.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/481739/lucene/nutch/trunk/contrib/web2/src/main/webapp/WEB-INF/jsp/explain.jsp
+END
+preferences.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/481739/lucene/nutch/trunk/contrib/web2/src/main/webapp/WEB-INF/jsp/preferences.jsp
+END
+results.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/485149/lucene/nutch/trunk/contrib/web2/src/main/webapp/WEB-INF/jsp/results.jsp
+END
+decorator.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/481739/lucene/nutch/trunk/contrib/web2/src/main/webapp/WEB-INF/jsp/decorator.jsp
+END

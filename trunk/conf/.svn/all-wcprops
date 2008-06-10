@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/repos/asf/!svn/ver/663092/lucene/nutch/trunk/conf
+END
+regex-normalize.xml.template
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/asf/!svn/ver/627890/lucene/nutch/trunk/conf/regex-normalize.xml.template
+END
+crawl-tool.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/asf/!svn/ver/497867/lucene/nutch/trunk/conf/crawl-tool.xml
+END
+hadoop-env.sh.template
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/asf/!svn/ver/382573/lucene/nutch/trunk/conf/hadoop-env.sh.template
+END
+hadoop-site.xml.template
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/asf/!svn/ver/376808/lucene/nutch/trunk/conf/hadoop-site.xml.template
+END
+httpclient-auth.xml.template
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/asf/!svn/ver/608972/lucene/nutch/trunk/conf/httpclient-auth.xml.template
+END
+parse-plugins.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/asf/!svn/ver/548730/lucene/nutch/trunk/conf/parse-plugins.xml
+END
+context.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/asf/!svn/ver/473936/lucene/nutch/trunk/conf/context.xsl
+END
+prefix-urlfilter.txt.template
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/asf/!svn/ver/549180/lucene/nutch/trunk/conf/prefix-urlfilter.txt.template
+END
+nutch-site.xml.template
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/asf/!svn/ver/374796/lucene/nutch/trunk/conf/nutch-site.xml.template
+END
+domain-suffixes.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/asf/!svn/ver/568053/lucene/nutch/trunk/conf/domain-suffixes.xsd
+END
+domain-suffixes.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/asf/!svn/ver/568053/lucene/nutch/trunk/conf/domain-suffixes.xml
+END
+subcollections.xml.template
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/asf/!svn/ver/497867/lucene/nutch/trunk/conf/subcollections.xml.template
+END
+tika-mimetypes.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/asf/!svn/ver/663092/lucene/nutch/trunk/conf/tika-mimetypes.xml
+END
+nutch-default.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/asf/!svn/ver/628631/lucene/nutch/trunk/conf/nutch-default.xml
+END
+suffix-urlfilter.txt.template
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/asf/!svn/ver/556072/lucene/nutch/trunk/conf/suffix-urlfilter.txt.template
+END
+parse-plugins.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/asf/!svn/ver/379403/lucene/nutch/trunk/conf/parse-plugins.dtd
+END
+common-terms.utf8
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/asf/!svn/ver/497867/lucene/nutch/trunk/conf/common-terms.utf8
+END
+automaton-urlfilter.txt.template
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/asf/!svn/ver/497867/lucene/nutch/trunk/conf/automaton-urlfilter.txt.template
+END
+crawl-urlfilter.txt.template
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/asf/!svn/ver/516592/lucene/nutch/trunk/conf/crawl-urlfilter.txt.template
+END
+slaves.template
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/asf/!svn/ver/378107/lucene/nutch/trunk/conf/slaves.template
+END
+regex-urlfilter.txt.template
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/asf/!svn/ver/516592/lucene/nutch/trunk/conf/regex-urlfilter.txt.template
+END
+nutch-conf.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/asf/!svn/ver/179640/lucene/nutch/trunk/conf/nutch-conf.xsl
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/asf/!svn/ver/582775/lucene/nutch/trunk/conf/log4j.properties
+END
+configuration.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/asf/!svn/ver/497867/lucene/nutch/trunk/conf/configuration.xsl
+END
+masters
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/asf/!svn/ver/646436/lucene/nutch/trunk/conf/masters
+END

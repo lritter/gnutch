@@ -1,0 +1,52 @@
+8
+
+dir
+665960
+http://svn.apache.org/repos/asf/lucene/nutch/trunk/contrib/web2/plugins/webui-extensionpoints
+http://svn.apache.org/repos/asf
+
+
+
+2006-12-01T23:01:00.117398Z
+481437
+siren
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+13f79535-47bb-0310-9956-ffa450edef68
+
+plugin.xml
+file
+
+
+
+
+2008-06-10T03:38:46.000000Z
+4176b87cafe54d342c41ec26acfd944f
+2006-12-01T23:01:00.117398Z
+481437
+siren
+
+build.xml
+file
+
+
+
+
+2008-06-10T03:38:46.000000Z
+5da06f9db0ce0c6fa7e900dfc4797dc3
+2006-12-01T23:01:00.117398Z
+481437
+siren
+

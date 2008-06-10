@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/473936/lucene/nutch/trunk/contrib/web2/plugins/web-clustering/src/java/org/apache/nutch/clustering
+END
+ClusterResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/asf/!svn/ver/473936/lucene/nutch/trunk/contrib/web2/plugins/web-clustering/src/java/org/apache/nutch/clustering/ClusterResult.java
+END
+Clusters.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/473936/lucene/nutch/trunk/contrib/web2/plugins/web-clustering/src/java/org/apache/nutch/clustering/Clusters.java
+END
+ClusteringPresearchExtension.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/repos/asf/!svn/ver/473936/lucene/nutch/trunk/contrib/web2/plugins/web-clustering/src/java/org/apache/nutch/clustering/ClusteringPresearchExtension.java
+END

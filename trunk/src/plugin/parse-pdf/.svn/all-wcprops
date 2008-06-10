@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/asf/!svn/ver/638092/lucene/nutch/trunk/src/plugin/parse-pdf
+END
+plugin.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/asf/!svn/ver/637960/lucene/nutch/trunk/src/plugin/parse-pdf/plugin.xml
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/asf/!svn/ver/537857/lucene/nutch/trunk/src/plugin/parse-pdf/build.xml
+END

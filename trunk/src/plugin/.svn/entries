@@ -1,0 +1,229 @@
+8
+
+dir
+665960
+http://svn.apache.org/repos/asf/lucene/nutch/trunk/src/plugin
+http://svn.apache.org/repos/asf
+
+
+
+2008-04-15T21:44:11.560035Z
+648424
+otis
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+13f79535-47bb-0310-9956-ffa450edef68
+
+index-anchor
+dir
+
+microformats-reltag
+dir
+
+parse-msword
+dir
+
+tld
+dir
+
+parse-js
+dir
+
+urlnormalizer-basic
+dir
+
+lib-nekohtml
+dir
+
+index-basic
+dir
+
+languageidentifier
+dir
+
+build-plugin.xml
+file
+
+
+
+
+2008-06-10T03:40:30.000000Z
+07b9024bdd6805809d54c017b0040b2c
+2007-01-19T16:17:32.719201Z
+497859
+siren
+has-props
+
+urlfilter-validator
+dir
+
+scoring-opic
+dir
+
+build.xml
+file
+
+
+
+
+2008-06-10T03:40:30.000000Z
+fad20e88870213b825f09e126bfc1a41
+2008-01-04T19:48:32.932458Z
+608972
+dogacan
+has-props
+
+urlfilter-prefix
+dir
+
+lib-xml
+dir
+
+query-more
+dir
+
+summary-lucene
+dir
+
+parse-swf
+dir
+
+query-site
+dir
+
+parse-msexcel
+dir
+
+analysis-de
+dir
+
+parse-zip
+dir
+
+urlfilter-suffix
+dir
+
+summary-basic
+dir
+
+urlfilter-automaton
+dir
+
+urlnormalizer-regex
+dir
+
+protocol-file
+dir
+
+parse-rss
+dir
+
+urlfilter-regex
+dir
+
+parse-pdf
+dir
+
+lib-http
+dir
+
+query-basic
+dir
+
+parse-oo
+dir
+
+lib-lucene-analyzers
+dir
+
+nutch-extensionpoints
+dir
+
+analysis-fr
+dir
+
+protocol-ftp
+dir
+
+clustering-carrot2
+dir
+
+parse-text
+dir
+
+creativecommons
+dir
+
+lib-regex-filter
+dir
+
+parse-rtf
+dir
+
+feed
+dir
+
+query-url
+dir
+
+subcollection
+dir
+
+lib-jakarta-poi
+dir
+
+parse-mp3
+dir
+
+index-more
+dir
+
+parse-ext
+dir
+
+plugin.dtd
+file
+
+
+
+
+2008-06-10T03:40:30.000000Z
+d5b029ebb311881ff1efdae267eb5c8d
+2006-11-12T11:37:02.988733Z
+473936
+siren
+has-props
+
+urlnormalizer-pass
+dir
+
+ontology
+dir
+
+parse-html
+dir
+
+protocol-httpclient
+dir
+
+parse-mspowerpoint
+dir
+
+lib-parsems
+dir
+
+protocol-http
+dir
+

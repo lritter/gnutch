@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/asf/!svn/ver/517382/lucene/nutch/trunk/contrib/web2/plugins/web-keymatch
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/411593/lucene/nutch/trunk/contrib/web2/plugins/web-keymatch/README.txt
+END
+keymatches.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/481437/lucene/nutch/trunk/contrib/web2/plugins/web-keymatch/keymatches.xml
+END
+plugin.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/517382/lucene/nutch/trunk/contrib/web2/plugins/web-keymatch/plugin.xml
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/517382/lucene/nutch/trunk/contrib/web2/plugins/web-keymatch/build.xml
+END

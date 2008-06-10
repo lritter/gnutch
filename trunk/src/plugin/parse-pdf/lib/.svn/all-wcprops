@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/asf/!svn/ver/638092/lucene/nutch/trunk/src/plugin/parse-pdf/lib
+END
+FontBox-0.1.0-dev.jar
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/637960/lucene/nutch/trunk/src/plugin/parse-pdf/lib/FontBox-0.1.0-dev.jar
+END
+PDFBox-0.7.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/637960/lucene/nutch/trunk/src/plugin/parse-pdf/lib/PDFBox-0.7.3.jar
+END
+PDFBox-LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/290382/lucene/nutch/trunk/src/plugin/parse-pdf/lib/PDFBox-LICENSE.txt
+END
+FontBox-LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/638092/lucene/nutch/trunk/src/plugin/parse-pdf/lib/FontBox-LICENSE.txt
+END

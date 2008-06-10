@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/481739/lucene/nutch/trunk/contrib/web2/src/main/webapp/WEB-INF/tld
+END
+c.tld
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/399004/lucene/nutch/trunk/contrib/web2/src/main/webapp/WEB-INF/tld/c.tld
+END
+struts-tiles.tld
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/481739/lucene/nutch/trunk/contrib/web2/src/main/webapp/WEB-INF/tld/struts-tiles.tld
+END
+fmt.tld
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/399004/lucene/nutch/trunk/contrib/web2/src/main/webapp/WEB-INF/tld/fmt.tld
+END

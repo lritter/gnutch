@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/repos/asf/!svn/ver/627893/lucene/nutch/trunk/bin
+END
+nutch
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repos/asf/!svn/ver/604956/lucene/nutch/trunk/bin/nutch
+END
+stop-balancer.sh
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/asf/!svn/ver/627893/lucene/nutch/trunk/bin/stop-balancer.sh
+END
+start-balancer.sh
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/asf/!svn/ver/627893/lucene/nutch/trunk/bin/start-balancer.sh
+END

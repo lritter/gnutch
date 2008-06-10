@@ -1,0 +1,57 @@
+8
+
+dir
+665960
+http://svn.apache.org/repos/asf/lucene/nutch/trunk/src/plugin/lib-lucene-analyzers
+http://svn.apache.org/repos/asf
+
+
+
+2008-02-06T12:06:34.154597Z
+618975
+ab
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+13f79535-47bb-0310-9956-ffa450edef68
+
+lib
+dir
+
+plugin.xml
+file
+
+
+
+
+2008-06-10T03:40:03.000000Z
+a514c4be953fc6e99b06abc95aa86bf5
+2008-02-06T12:06:34.154597Z
+618975
+ab
+has-props
+
+build.xml
+file
+
+
+
+
+2008-06-10T03:40:03.000000Z
+71d0812f1d2698fa0ec6095aa9c71c00
+2007-01-19T16:17:32.719201Z
+497859
+siren
+has-props
+
