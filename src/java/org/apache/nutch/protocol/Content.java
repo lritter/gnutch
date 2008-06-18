@@ -252,18 +252,16 @@ public final class Content implements Writable, JSONString {
 
   public String toJSONString() {
     try {
-      JSONStringer main = new JSONStringer();
-      JSONStringer meta = new JSONStringer();
+      JSONStringer s = new JSONStringer();
 
-      meta.object().key("version").value(version).endObject();
-      meta.object().key("url").value(url).endObject();
-      meta.object().key("base").value(base).endObject();
-      meta.object().key("content-type").value(contentType).endObject();
-      meta.object().key("metadata").value(metadata).endObject();
+      s.object().key("version").value(version).endObject();
+      s.object().key("url").value(url).endObject();
+      s.object().key("base").value(base).endObject();
+      s.object().key("content-type").value(contentType).endObject();
+      s.object().key("metadata").value(metadata).endObject();
+      s.object().key("content").value(new String(content)).endObject();
       
-      main.object().key("metadata").value(meta.toString()).key("content").value(new String(content)).endObject();
-      
-      return main.toString();
+      return s.toString();
     } catch(JSONException e) {
 	throw new RuntimeException(e);
     }
