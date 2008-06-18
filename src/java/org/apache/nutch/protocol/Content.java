@@ -41,7 +41,10 @@ import org.apache.nutch.metadata.Metadata;
 import org.apache.nutch.util.MimeUtil;
 import org.apache.nutch.util.NutchConfiguration;
 
-public final class Content implements Writable{
+import org.json.JSONString;
+import org.json.JSONStringer;
+
+public final class Content implements Writable, JSONString {
 
   public static final String DIR_NAME = "content";
 
@@ -244,7 +247,22 @@ public final class Content implements Writable{
     buffer.append(new String(content)); // try default encoding
 
     return buffer.toString();
+  }
 
+  public String toJSONString() {
+
+      JSONStringer main = new JSONStringer();
+      JSONStringer meta = new JSONStringer();
+
+      meta.object().key("version").value(version).endObject();
+      meta.object().key("url").value(url).endObject();
+      meta.object().key("base").value(base).endObject();
+      meta.object().key("content-type").value(contentType).endObject();
+      meta.object().key("metadata").value(metadata).endObject();
+      
+      main.object().key("metadata").value(meta.toString()).key("content").value(new String(content)).endObject();
+      
+      return main.toString();
   }
 
   public static void main(String argv[]) throws Exception {
@@ -282,5 +300,4 @@ public final class Content implements Writable{
   private String getContentType(String typeName, String url, byte[] data) {
     return this.mimeTypes.autoResolveContentType(typeName, url, data);
   }
-
 }
