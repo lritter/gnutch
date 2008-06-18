@@ -43,6 +43,7 @@ import org.apache.nutch.util.NutchConfiguration;
 
 import org.json.JSONString;
 import org.json.JSONStringer;
+import org.json.JSONException;
 
 public final class Content implements Writable, JSONString {
 
@@ -250,7 +251,7 @@ public final class Content implements Writable, JSONString {
   }
 
   public String toJSONString() {
-
+    try {
       JSONStringer main = new JSONStringer();
       JSONStringer meta = new JSONStringer();
 
@@ -263,6 +264,9 @@ public final class Content implements Writable, JSONString {
       main.object().key("metadata").value(meta.toString()).key("content").value(new String(content)).endObject();
       
       return main.toString();
+    } catch(JSONException e) {
+	throw new RuntimeException(e);
+    }
   }
 
   public static void main(String argv[]) throws Exception {

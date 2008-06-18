@@ -25,6 +25,7 @@ import org.apache.nutch.util.*;
 
 import org.json.JSONString;
 import org.json.JSONStringer;
+import org.json.JSONException;
 
 /* The crawl state of a url. */
 public class CrawlDatum implements WritableComparable, Cloneable, JSONString {
@@ -438,6 +439,7 @@ public class CrawlDatum implements WritableComparable, Cloneable, JSONString {
   }
 
   public String toJSONString() {
+    try {
       JSONStringer s = new JSONStringer();
       
       s.object();
@@ -452,8 +454,12 @@ public class CrawlDatum implements WritableComparable, Cloneable, JSONString {
       s.key("signature").value(StringUtil.toHexString(getSignature()));
       s.key("metadata").value(metaData != null ? metaData : "null");
       
-      s.endobject();
+      s.endObject();
 
       return s.toString();
+
+    } catch(JSONException e) {
+        throw new RuntimeException(e);
+    }
   }
 }
