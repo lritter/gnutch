@@ -254,12 +254,12 @@ public final class Content implements Writable, JSONString {
     try {
       JSONStringer s = new JSONStringer();
 
-      s.object().key("version").value(version).endObject();
-      s.object().key("url").value(url).endObject();
-      s.object().key("base").value(base).endObject();
-      s.object().key("content-type").value(contentType).endObject();
-      s.object().key("metadata").value(metadata).endObject();
-      s.object().key("content").value(new String(content)).endObject();
+      s.object().key("version").value(version);
+      s.key("url").value(url);
+      s.key("base").value(base);
+      s.key("content-type").value(contentType);
+      s.key("metadata").value(metadata);
+      s.key("content").value(new String(content)).endObject();
       
       return s.toString();
     } catch(JSONException e) {
