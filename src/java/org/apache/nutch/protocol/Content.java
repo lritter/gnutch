@@ -260,15 +260,15 @@ public final class Content implements Writable, JSONString {
       s.key("base").value(base);
       s.key("content-type").value(contentType);
       s.key("metadata").value(metadata);
-      s.key("content").value(new String(content));
-      s.key("testing").value("seriously");
-      s.key("decode");
       String b;
       try {
 	  b = Text.decode(content);
       } catch(CharacterCodingException e) {
-	  b = "Failed to decode: " + e.toString();
+	  b = new String(content);
+    s.key("encoding error");
+    s.value(e.toString());
       }
+      s.key("content");
       s.value(b);
       s.endObject();
       
