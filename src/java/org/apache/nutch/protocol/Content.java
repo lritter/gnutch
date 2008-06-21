@@ -261,6 +261,7 @@ public final class Content implements Writable, JSONString {
       s.key("content-type").value(contentType);
       s.key("metadata").value(metadata);
       s.key("content").value(new String(content));
+      s.key("testing").value("seriously");
       s.key("decode");
       String b;
       try {
