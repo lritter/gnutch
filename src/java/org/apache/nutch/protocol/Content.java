@@ -25,6 +25,7 @@ import java.io.DataOutput;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.zip.InflaterInputStream;
+import java.nio.charset.CharacterCodingException;
 
 //Hadoop imports
 import org.apache.hadoop.conf.Configuration;
@@ -260,7 +261,14 @@ public final class Content implements Writable, JSONString {
       s.key("content-type").value(contentType);
       s.key("metadata").value(metadata);
       s.key("content").value(new String(content));
-      s.key("decoded").value(Text.decode(content));
+      s.key("decode");
+      String b;
+      try {
+	  b = Text.decode(content);
+      } catch(CharacterCodingException e) {
+	  b = "Failed to decode: " + e.toString();
+      }
+      s.value(b);
       s.endObject();
       
       return s.toString();
