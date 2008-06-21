@@ -260,7 +260,7 @@ public final class Content implements Writable, JSONString {
       s.key("content-type").value(contentType);
       s.key("metadata").value(metadata);
       s.key("content").value(new String(content));
-      s.key("decoded").value(String.decode(content));
+      s.key("decoded").value(Text.decode(content));
       s.endObject();
       
       return s.toString();
