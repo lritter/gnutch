@@ -1,7 +1,7 @@
 8
 
 dir
-665960
+670754
 http://svn.apache.org/repos/asf/lucene/nutch/trunk/contrib/web2/plugins/web-resources
 http://svn.apache.org/repos/asf
 
@@ -38,7 +38,7 @@ file
 
 
 
-2008-06-10T03:38:46.000000Z
+2008-06-23T21:12:19.000000Z
 ce735fab7fc56f0037d1c76ed2fcb976
 2007-03-12T20:35:37.737556Z
 517382
@@ -50,7 +50,7 @@ file
 
 
 
-2008-06-10T03:38:46.000000Z
+2008-06-23T21:12:19.000000Z
 2edb0819c4226b6110f5921148e82f6a
 2007-03-12T20:35:37.737556Z
 517382

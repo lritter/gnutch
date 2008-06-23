@@ -1,7 +1,7 @@
 8
 
 dir
-665960
+670754
 http://svn.apache.org/repos/asf/lucene/nutch/trunk/src/testresources/testcrawl/segments/20060919213635/crawl_parse
 http://svn.apache.org/repos/asf
 
@@ -32,7 +32,7 @@ file
 
 
 
-2008-06-10T03:39:35.000000Z
+2008-06-23T21:13:29.000000Z
 5b09b31456a79f07278c5591eab9fbbe
 2006-09-19T19:36:19.986101Z
 447940
@@ -45,7 +45,7 @@ file
 
 
 
-2008-06-10T03:39:35.000000Z
+2008-06-23T21:13:29.000000Z
 b87f0b4141898ebc5034f24ad7f7398b
 2006-09-19T19:36:19.986101Z
 447940

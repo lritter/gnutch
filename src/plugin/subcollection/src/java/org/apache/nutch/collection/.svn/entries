@@ -1,7 +1,7 @@
 8
 
 dir
-665960
+670754
 http://svn.apache.org/repos/asf/lucene/nutch/trunk/src/plugin/subcollection/src/java/org/apache/nutch/collection
 http://svn.apache.org/repos/asf
 
@@ -32,7 +32,7 @@ file
 
 
 
-2008-06-10T03:40:11.000000Z
+2008-06-23T21:14:08.000000Z
 4fc1759ddf1ebbebadf9b6fc64317e58
 2006-11-12T11:37:02.988733Z
 473936
@@ -44,7 +44,7 @@ file
 
 
 
-2008-06-10T03:40:11.000000Z
+2008-06-23T21:14:08.000000Z
 5f73d47b23ee896fc9d31a75bb80cd37
 2007-10-29T14:57:19.109611Z
 589654
@@ -56,7 +56,7 @@ file
 
 
 
-2008-06-10T03:40:11.000000Z
+2008-06-23T21:14:08.000000Z
 08ae134d29c87381f94e8731ab717f56
 2006-06-05T20:12:48.518868Z
 411904

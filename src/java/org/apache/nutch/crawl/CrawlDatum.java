@@ -23,12 +23,8 @@ import java.util.*;
 import org.apache.hadoop.io.*;
 import org.apache.nutch.util.*;
 
-import org.json.JSONString;
-import org.json.JSONStringer;
-import org.json.JSONException;
-
 /* The crawl state of a url. */
-public class CrawlDatum implements WritableComparable, Cloneable, JSONString {
+public class CrawlDatum implements WritableComparable, Cloneable {
   public static final String GENERATE_DIR_NAME = "crawl_generate";
   public static final String FETCH_DIR_NAME = "crawl_fetch";
   public static final String PARSE_DIR_NAME = "crawl_parse";
@@ -435,31 +431,6 @@ public class CrawlDatum implements WritableComparable, Cloneable, JSONString {
       return super.clone();
     } catch (CloneNotSupportedException e) {
       throw new RuntimeException(e);
-    }
-  }
-
-  public String toJSONString() {
-    try {
-      JSONStringer s = new JSONStringer();
-      
-      s.object();
-      
-      s.key("version").value(String.valueOf(CUR_VERSION));
-      s.key("status").value(String.valueOf(getStatus()));
-      s.key("fetch-time").value(new Date(getFetchTime()));
-      s.key("modified-time").value(new Date(getModifiedTime()));
-      s.key("retries-since-fetch").value(String.valueOf(getRetriesSinceFetch()));
-      s.key("retry-interval").value(String.valueOf(getFetchInterval()));
-      s.key("score").value(String.valueOf(getScore()));
-      s.key("signature").value(StringUtil.toHexString(getSignature()));
-      s.key("metadata").value(metaData != null ? metaData : "null");
-      
-      s.endObject();
-
-      return s.toString();
-
-    } catch(JSONException e) {
-        throw new RuntimeException(e);
     }
   }
 }

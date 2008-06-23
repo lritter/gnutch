@@ -1,7 +1,7 @@
 8
 
 dir
-665960
+670754
 http://svn.apache.org/repos/asf/lucene/nutch/trunk/src/plugin/urlfilter-automaton/lib
 http://svn.apache.org/repos/asf
 
@@ -32,7 +32,7 @@ file
 
 
 
-2008-06-10T03:39:49.000000Z
+2008-06-23T21:13:43.000000Z
 564d2e36706a57fd6274b6607f1177f3
 2006-03-21T22:29:18.551561Z
 387651

@@ -1,7 +1,7 @@
 8
 
 dir
-665960
+670754
 http://svn.apache.org/repos/asf/lucene/nutch/trunk/src/plugin/summary-basic/src/java/org/apache/nutch/summary/basic
 http://svn.apache.org/repos/asf
 
@@ -32,7 +32,7 @@ file
 
 
 
-2008-06-10T03:39:49.000000Z
+2008-06-23T21:13:42.000000Z
 d0c289d72761f71b3183369760384d11
 2006-11-12T11:37:02.988733Z
 473936
@@ -45,7 +45,7 @@ file
 
 
 
-2008-06-10T03:39:49.000000Z
+2008-06-23T21:13:42.000000Z
 934ed2075633b8fb5c99c3bbd530365e
 2006-05-08T21:04:01.915341Z
 405165

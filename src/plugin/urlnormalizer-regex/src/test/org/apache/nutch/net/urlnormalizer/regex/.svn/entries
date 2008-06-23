@@ -1,7 +1,7 @@
 8
 
 dir
-665960
+670754
 http://svn.apache.org/repos/asf/lucene/nutch/trunk/src/plugin/urlnormalizer-regex/src/test/org/apache/nutch/net/urlnormalizer/regex
 http://svn.apache.org/repos/asf
 
@@ -32,7 +32,7 @@ file
 
 
 
-2008-06-10T03:39:49.000000Z
+2008-06-23T21:13:42.000000Z
 be5b2af7964cf91a455d846a720cfaf6
 2008-02-14T22:17:28.513868Z
 627890

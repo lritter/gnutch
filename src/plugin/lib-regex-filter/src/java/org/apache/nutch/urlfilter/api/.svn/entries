@@ -1,7 +1,7 @@
 8
 
 dir
-665960
+670754
 http://svn.apache.org/repos/asf/lucene/nutch/trunk/src/plugin/lib-regex-filter/src/java/org/apache/nutch/urlfilter/api
 http://svn.apache.org/repos/asf
 
@@ -32,7 +32,7 @@ file
 
 
 
-2008-06-10T03:40:08.000000Z
+2008-06-23T21:14:06.000000Z
 7399b62dc41e9ce3e93102bc57c8d6be
 2006-11-12T11:37:02.988733Z
 473936
@@ -45,7 +45,7 @@ file
 
 
 
-2008-06-10T03:40:08.000000Z
+2008-06-23T21:14:06.000000Z
 784fa95cf02e9995fd5e92facff918b1
 2006-11-12T11:37:02.988733Z
 473936

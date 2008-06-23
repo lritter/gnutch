@@ -1,7 +1,7 @@
 8
 
 dir
-665960
+670754
 http://svn.apache.org/repos/asf/lucene/nutch/trunk/src/plugin/protocol-ftp/lib
 http://svn.apache.org/repos/asf
 
@@ -32,7 +32,7 @@ file
 
 
 
-2008-06-10T03:40:03.000000Z
+2008-06-23T21:14:00.000000Z
 e53f15e1d1704479e1571fa448ec0424
 2005-03-01T22:04:46.029946Z
 155829

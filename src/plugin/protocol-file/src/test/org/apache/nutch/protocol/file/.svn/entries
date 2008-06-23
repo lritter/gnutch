@@ -1,7 +1,7 @@
 8
 
 dir
-665960
+670754
 http://svn.apache.org/repos/asf/lucene/nutch/trunk/src/plugin/protocol-file/src/test/org/apache/nutch/protocol/file
 http://svn.apache.org/repos/asf
 
@@ -32,7 +32,7 @@ file
 
 
 
-2008-06-10T03:39:49.000000Z
+2008-06-23T21:13:43.000000Z
 a07bf3529c59ae95675af9a0591a5601
 2007-03-10T06:52:31.716055Z
 516660
@@ -44,7 +44,7 @@ file
 
 
 
-2008-06-10T03:39:49.000000Z
+2008-06-23T21:13:43.000000Z
 f36fdddbc3949321c06a6de7dd382652
 2007-03-10T06:52:31.716055Z
 516660

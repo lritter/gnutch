@@ -1,7 +1,7 @@
 8
 
 dir
-665960
+670754
 http://svn.apache.org/repos/asf/lucene/nutch/trunk/src/plugin/feed/src/test/org/apache/nutch/parse/feed
 http://svn.apache.org/repos/asf
 
@@ -32,7 +32,7 @@ file
 
 
 
-2008-06-10T03:40:11.000000Z
+2008-06-23T21:14:08.000000Z
 1dc6053298fa9d946f0e83c56b80c806
 2007-11-15T17:03:07.977150Z
 595359

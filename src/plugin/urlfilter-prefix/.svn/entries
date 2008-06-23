@@ -1,7 +1,7 @@
 8
 
 dir
-665960
+670754
 http://svn.apache.org/repos/asf/lucene/nutch/trunk/src/plugin/urlfilter-prefix
 http://svn.apache.org/repos/asf
 
@@ -35,7 +35,7 @@ file
 
 
 
-2008-06-10T03:39:41.000000Z
+2008-06-23T21:13:35.000000Z
 620ca36202355414d06902a545e901a8
 2007-01-19T16:17:32.719201Z
 497859
@@ -47,7 +47,7 @@ file
 
 
 
-2008-06-10T03:39:41.000000Z
+2008-06-23T21:13:35.000000Z
 3ad02216a6f68f9e616ae943b1c78ffe
 2007-01-19T16:17:32.719201Z
 497859

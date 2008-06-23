@@ -1,7 +1,7 @@
 8
 
 dir
-665960
+670754
 http://svn.apache.org/repos/asf/lucene/nutch/trunk/contrib/web2/plugins/web-caching-oscache/src/java/org/apache/nutch/webapp/controller
 http://svn.apache.org/repos/asf
 
@@ -32,7 +32,7 @@ file
 
 
 
-2008-06-10T03:38:48.000000Z
+2008-06-23T21:12:20.000000Z
 bc3cfe5f4ee468b2093e975aaf48d14e
 2006-11-12T11:37:02.988733Z
 473936

@@ -1,7 +1,7 @@
 8
 
 dir
-665960
+670754
 http://svn.apache.org/repos/asf/lucene/nutch/trunk/src/plugin/lib-nekohtml
 http://svn.apache.org/repos/asf
 
@@ -35,7 +35,7 @@ file
 
 
 
-2008-06-10T03:39:37.000000Z
+2008-06-23T21:13:31.000000Z
 87d2c934701e748c08d072afc5ad5ee2
 2007-01-19T16:17:32.719201Z
 497859
@@ -48,7 +48,7 @@ file
 
 
 
-2008-06-10T03:39:37.000000Z
+2008-06-23T21:13:31.000000Z
 dda17120d6d4701a840f4122772f7979
 2007-01-19T16:17:32.719201Z
 497859

@@ -1,7 +1,7 @@
 8
 
 dir
-665960
+670754
 http://svn.apache.org/repos/asf/lucene/nutch/trunk/src/plugin/ontology/lib
 http://svn.apache.org/repos/asf
 
@@ -32,7 +32,7 @@ file
 
 
 
-2008-06-10T03:40:29.000000Z
+2008-06-23T21:14:30.000000Z
 0e3011f59fb2ffaaf3805996224a97c2
 2005-03-01T22:04:46.029946Z
 155829
@@ -45,7 +45,7 @@ file
 
 
 
-2008-06-10T03:40:29.000000Z
+2008-06-23T21:14:30.000000Z
 afe41ca24eaab9aae7732c0104ffa37f
 2005-03-01T22:04:46.029946Z
 155829

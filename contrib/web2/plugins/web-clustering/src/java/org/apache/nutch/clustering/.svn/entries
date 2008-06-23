@@ -1,7 +1,7 @@
 8
 
 dir
-665960
+670754
 http://svn.apache.org/repos/asf/lucene/nutch/trunk/contrib/web2/plugins/web-clustering/src/java/org/apache/nutch/clustering
 http://svn.apache.org/repos/asf
 
@@ -32,7 +32,7 @@ file
 
 
 
-2008-06-10T03:38:48.000000Z
+2008-06-23T21:12:20.000000Z
 3ab9b5ed7e4eaafb31fb01b146fbd010
 2006-11-12T11:37:02.988733Z
 473936
@@ -44,7 +44,7 @@ file
 
 
 
-2008-06-10T03:38:48.000000Z
+2008-06-23T21:12:20.000000Z
 384351fb89a7f13a5ea8d86cd1bbe1a5
 2006-11-12T11:37:02.988733Z
 473936
@@ -56,7 +56,7 @@ file
 
 
 
-2008-06-10T03:38:48.000000Z
+2008-06-23T21:12:20.000000Z
 26a56a3cd5470d25c2c7ea2980797263
 2006-11-12T11:37:02.988733Z
 473936

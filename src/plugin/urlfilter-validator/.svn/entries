@@ -1,7 +1,7 @@
 8
 
 dir
-665960
+670754
 http://svn.apache.org/repos/asf/lucene/nutch/trunk/src/plugin/urlfilter-validator
 http://svn.apache.org/repos/asf
 
@@ -35,7 +35,7 @@ file
 
 
 
-2008-06-10T03:39:41.000000Z
+2008-06-23T21:13:34.000000Z
 16ebf154e8ddc460a1c5b2514945a2f2
 2007-09-10T19:45:22.539084Z
 574346
@@ -47,7 +47,7 @@ file
 
 
 
-2008-06-10T03:39:41.000000Z
+2008-06-23T21:13:34.000000Z
 4de69891582d23a751bca27351854616
 2007-09-10T19:45:22.539084Z
 574346

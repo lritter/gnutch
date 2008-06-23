@@ -1,7 +1,7 @@
 8
 
 dir
-665960
+670754
 http://svn.apache.org/repos/asf/lucene/nutch/trunk/src/plugin/query-more/src/java/org/apache/nutch/searcher/more
 http://svn.apache.org/repos/asf
 
@@ -32,7 +32,7 @@ file
 
 
 
-2008-06-10T03:39:46.000000Z
+2008-06-23T21:13:38.000000Z
 708a2369be95c1e4db76bef9e7d29749
 2006-11-12T11:37:02.988733Z
 473936
@@ -44,7 +44,7 @@ file
 
 
 
-2008-06-10T03:39:46.000000Z
+2008-06-23T21:13:38.000000Z
 d19c5be61f36f0ad90c7b8895d500f1c
 2006-11-12T11:37:02.988733Z
 473936
@@ -56,7 +56,7 @@ file
 
 
 
-2008-06-10T03:39:46.000000Z
+2008-06-23T21:13:38.000000Z
 d19568ad19348e7ef47fba41c685cc2a
 2005-03-01T22:04:46.029946Z
 155829

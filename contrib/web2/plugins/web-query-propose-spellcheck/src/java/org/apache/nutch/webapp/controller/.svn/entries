@@ -1,7 +1,7 @@
 8
 
 dir
-665960
+670754
 http://svn.apache.org/repos/asf/lucene/nutch/trunk/contrib/web2/plugins/web-query-propose-spellcheck/src/java/org/apache/nutch/webapp/controller
 http://svn.apache.org/repos/asf
 
@@ -32,7 +32,7 @@ file
 
 
 
-2008-06-10T03:38:46.000000Z
+2008-06-23T21:12:19.000000Z
 8125ea56904c79148562fca2d38a2618
 2006-11-12T11:37:02.988733Z
 473936

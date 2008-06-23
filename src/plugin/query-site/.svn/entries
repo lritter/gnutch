@@ -1,7 +1,7 @@
 8
 
 dir
-665960
+670754
 http://svn.apache.org/repos/asf/lucene/nutch/trunk/src/plugin/query-site
 http://svn.apache.org/repos/asf
 
@@ -35,7 +35,7 @@ file
 
 
 
-2008-06-10T03:39:46.000000Z
+2008-06-23T21:13:38.000000Z
 5ea539767397681b7dcf61045b63f7cc
 2007-01-19T16:17:32.719201Z
 497859
@@ -48,7 +48,7 @@ file
 
 
 
-2008-06-10T03:39:46.000000Z
+2008-06-23T21:13:38.000000Z
 d0723b6148e2c357aced97df2c2345df
 2007-01-19T16:17:32.719201Z
 497859

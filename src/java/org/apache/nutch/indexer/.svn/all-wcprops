@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 79
-/repos/asf/!svn/ver/638779/lucene/nutch/trunk/src/java/org/apache/nutch/indexer
+/repos/asf/!svn/ver/669300/lucene/nutch/trunk/src/java/org/apache/nutch/indexer
 END
 DeleteDuplicates.java
 K 25
 svn:wc:ra_dav:version-url
 V 101
-/repos/asf/!svn/ver/638779/lucene/nutch/trunk/src/java/org/apache/nutch/indexer/DeleteDuplicates.java
+/repos/asf/!svn/ver/669300/lucene/nutch/trunk/src/java/org/apache/nutch/indexer/DeleteDuplicates.java
 END
 IndexingException.java
 K 25

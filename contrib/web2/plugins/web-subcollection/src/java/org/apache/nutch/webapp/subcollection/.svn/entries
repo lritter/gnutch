@@ -1,7 +1,7 @@
 8
 
 dir
-665960
+670754
 http://svn.apache.org/repos/asf/lucene/nutch/trunk/contrib/web2/plugins/web-subcollection/src/java/org/apache/nutch/webapp/subcollection
 http://svn.apache.org/repos/asf
 
@@ -32,7 +32,7 @@ file
 
 
 
-2008-06-10T03:38:46.000000Z
+2008-06-23T21:12:19.000000Z
 a540e88a637f5e92c2600125bc87d652
 2006-11-12T11:37:02.988733Z
 473936

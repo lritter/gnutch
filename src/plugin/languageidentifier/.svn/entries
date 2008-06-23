@@ -1,7 +1,7 @@
 8
 
 dir
-665960
+670754
 http://svn.apache.org/repos/asf/lucene/nutch/trunk/src/plugin/languageidentifier
 http://svn.apache.org/repos/asf
 
@@ -35,7 +35,7 @@ file
 
 
 
-2008-06-10T03:39:41.000000Z
+2008-06-23T21:13:34.000000Z
 65502a7134cbd4ff3a0d59ac22728082
 2007-01-19T16:17:32.719201Z
 497859
@@ -47,7 +47,7 @@ file
 
 
 
-2008-06-10T03:39:41.000000Z
+2008-06-23T21:13:34.000000Z
 d001855e2b6adf1e7ea568748e1d70a3
 2007-01-19T16:17:32.719201Z
 497859

@@ -1,7 +1,7 @@
 8
 
 dir
-665960
+670754
 http://svn.apache.org/repos/asf/lucene/nutch/trunk/src/plugin/index-anchor/src/java/org/apache/nutch/indexer/anchor
 http://svn.apache.org/repos/asf
 
@@ -32,7 +32,7 @@ file
 
 
 
-2008-06-10T03:39:36.000000Z
+2008-06-23T21:13:30.000000Z
 de6b731a4773e5e04f35ec18ddb9c61e
 2007-11-13T17:35:08.535202Z
 594591
@@ -44,7 +44,7 @@ file
 
 
 
-2008-06-10T03:39:36.000000Z
+2008-06-23T21:13:30.000000Z
 4c19047153a533b521f11f8484ace3d7
 2007-11-13T17:35:08.535202Z
 594591

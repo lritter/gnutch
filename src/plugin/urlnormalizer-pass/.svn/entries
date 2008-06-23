@@ -1,7 +1,7 @@
 8
 
 dir
-665960
+670754
 http://svn.apache.org/repos/asf/lucene/nutch/trunk/src/plugin/urlnormalizer-pass
 http://svn.apache.org/repos/asf
 
@@ -35,7 +35,7 @@ file
 
 
 
-2008-06-10T03:40:18.000000Z
+2008-06-23T21:14:15.000000Z
 bb1abb4356b4338e6657fd2dff1aa345
 2007-01-19T16:17:32.719201Z
 497859
@@ -48,7 +48,7 @@ file
 
 
 
-2008-06-10T03:40:18.000000Z
+2008-06-23T21:14:15.000000Z
 ebd8e7ddb74d69845cfd75967c0400d6
 2007-01-19T16:17:32.719201Z
 497859

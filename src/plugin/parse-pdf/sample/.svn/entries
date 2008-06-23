@@ -1,7 +1,7 @@
 8
 
 dir
-665960
+670754
 http://svn.apache.org/repos/asf/lucene/nutch/trunk/src/plugin/parse-pdf/sample
 http://svn.apache.org/repos/asf
 
@@ -32,7 +32,7 @@ file
 
 
 
-2008-06-10T03:39:49.000000Z
+2008-06-23T21:13:43.000000Z
 ff75fb666071159c7aca5dd99f8b1963
 2005-03-01T22:04:46.029946Z
 155829
@@ -44,7 +44,7 @@ file
 
 
 
-2008-06-10T03:39:49.000000Z
+2008-06-23T21:13:43.000000Z
 dc0e6930639b5461cc6c17ce45075ef4
 2005-03-01T22:04:46.029946Z
 155829

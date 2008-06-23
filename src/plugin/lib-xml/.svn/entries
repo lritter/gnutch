@@ -1,7 +1,7 @@
 8
 
 dir
-665960
+670754
 http://svn.apache.org/repos/asf/lucene/nutch/trunk/src/plugin/lib-xml
 http://svn.apache.org/repos/asf
 
@@ -35,7 +35,7 @@ file
 
 
 
-2008-06-10T03:39:46.000000Z
+2008-06-23T21:13:38.000000Z
 0108b2cc20b3325c42f01c02f6d7719d
 2007-01-19T16:17:32.719201Z
 497859
@@ -48,7 +48,7 @@ file
 
 
 
-2008-06-10T03:39:46.000000Z
+2008-06-23T21:13:38.000000Z
 8500faa1885efd025516e0e84e22b79b
 2007-01-19T16:17:32.719201Z
 497859
