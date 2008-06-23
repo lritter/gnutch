@@ -602,6 +602,30 @@
   <!-- ================================================================== -->
   <target name="clean">
     <delete dir="${build.dir}"/>
+    <delete file="bin/hadoop"/>
+    <delete file="bin/hadoop-config.sh"/>
+    <delete file="bin/hadoop-daemon.sh"/>
+    <delete file="bin/hadoop-daemons.sh"/>
+    <delete file="bin/rcc"/>
+    <delete file="bin/slaves.sh"/>
+    <delete file="bin/start-all.sh"/>
+    <delete file="bin/start-dfs.sh"/>
+    <delete file="bin/start-mapred.sh"/>
+    <delete file="bin/stop-all.sh"/>
+    <delete file="bin/stop-dfs.sh"/>
+    <delete file="bin/stop-mapred.sh"/>
+    <delete file="conf/automaton-urlfilter.txt"/>
+    <delete file="conf/crawl-urlfilter.txt"/>
+    <delete file="conf/hadoop-env.sh"/>
+    <delete file="conf/hadoop-site.xml"/>
+    <delete file="conf/httpclient-auth.xml"/>
+    <delete file="conf/nutch-site.xml"/>
+    <delete file="conf/prefix-urlfilter.txt"/>
+    <delete file="conf/regex-normalize.xml"/>
+    <delete file="conf/regex-urlfilter.txt"/>
+    <delete file="conf/slaves"/>
+    <delete file="conf/subcollections.xml"/>
+    <delete file="conf/suffix-urlfilter.txt"/>
   </target>
 
 </project>
