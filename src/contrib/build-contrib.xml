@@ -15,13 +15,13 @@
  See the License for the specific language governing permissions and
  limitations under the License.
 -->
-<!-- Imported by plugin build.xml files to define default targets. -->
+<!-- Imported by contrib build.xml files to define default targets. -->
 <project>
 
   <property name="name" value="${ant.project.name}"/>
   <property name="root" value="${basedir}"/>
 
-  <!-- load plugin-specific properties first -->
+  <!-- load contrib-specific properties first -->
   <property file="${user.home}/${name}.build.properties" />
   <property file="${root}/build.properties" />
 
@@ -82,14 +82,14 @@
   <target name="init-contrib"/>
 
   <!--
-   ! Used to build plugin compilation dependencies
+   ! Used to build contrib compilation dependencies
    ! (to be overridden by plugins)
    !-->
   <target name="deps-jar"/>
 
   <!--
-   ! Used to deploy plugin runtime dependencies
-   ! (to be overridden by plugins)
+   ! Used to deploy contrib runtime dependencies
+   ! (to be overridden by contribs)
    !-->
   <target name="deps-test"/>
 
@@ -97,7 +97,7 @@
   <!-- Compile the Java files                                 -->
   <!-- ====================================================== -->
   <target name="compile" depends="init,deps-jar">
-    <echo message="Compiling plugin: ${name}"/>
+    <echo message="Compiling contrib: ${name}"/>
     <javac 
      encoding="${build.encoding}" 
      srcdir="${src.dir}"
@@ -118,7 +118,7 @@
   </target>
   
   <!-- ================================================================== -->
-  <!-- Make plugin .jar                                                   -->
+  <!-- Make contrib .jar                                                  -->
   <!-- ================================================================== -->
   <!--                                                                    -->
   <!-- ================================================================== -->
@@ -137,7 +137,7 @@
   </target>
 
   <!-- ================================================================== -->
-  <!-- Deploy plugin to ${deploy.dir}                                     -->
+  <!-- Deploy contrib to ${deploy.dir}                                    -->
   <!-- ================================================================== -->
   <!--                                                                    -->
   <!-- ================================================================== -->
