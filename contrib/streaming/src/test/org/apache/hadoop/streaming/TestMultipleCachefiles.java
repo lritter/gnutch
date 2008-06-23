@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.hadoop.streaming;
+package org.apache.nutch.streaming;
 
 import junit.framework.TestCase;
 import java.io.*;

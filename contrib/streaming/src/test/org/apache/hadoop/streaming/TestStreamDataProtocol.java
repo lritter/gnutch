@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.hadoop.streaming;
+package org.apache.nutch.streaming;
 
 import junit.framework.TestCase;
 import java.io.*;
@@ -40,7 +40,7 @@ public class TestStreamDataProtocol extends TestCase
   // map behaves like "/usr/bin/cat"; 
   protected String map = StreamUtil.makeJavaCommand(TrApp.class, new String[]{".", "."});
   // reduce counts the number of values for each key
-  protected String reduce = "org.apache.hadoop.streaming.ValueCountReduce";
+  protected String reduce = "org.apache.nutch.streaming.ValueCountReduce";
   protected String outputExpect = "bunnies.are\t1\nbunnies.have\t2\nbunnies.run\t1\nroses.are\t2\nroses.attract\t1\nroses.look\t1\nroses.need\t1\nroses.smell\t1\n";
 
   private StreamJob job;

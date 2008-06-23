@@ -32,7 +32,7 @@ to call at top-level: ant deploy-contrib compile-core-test
       basedir="${build.classes}"      
     >
   	<manifest>
-	    <attribute name="Main-Class" value="org.apache.hadoop.streaming.HadoopStreaming"/>
+	    <attribute name="Main-Class" value="org.apache.nutch.streaming.HadoopStreaming"/>
 	</manifest>
     </jar>
   </target>

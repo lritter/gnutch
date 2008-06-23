@@ -16,11 +16,11 @@
  * limitations under the License.
  */
 
-package org.apache.hadoop.streaming;
+package org.apache.nutch.streaming;
 
 import java.io.*;
 
-import org.apache.hadoop.streaming.Environment;
+import org.apache.nutch.streaming.Environment;
 
 /** 
     Used to test the usage of external applications without adding
