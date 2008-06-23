@@ -37,7 +37,8 @@ import org.apache.hadoop.mapred.OutputCollector;
 import org.apache.hadoop.mapred.Reporter;
 import org.apache.hadoop.mapred.SequenceFileInputFormat;
 import org.apache.hadoop.util.StringUtils;
-import org.apache.hadoop.util.ToolBase;
+import org.apache.hadoop.util.Tool;
+import org.apache.hadoop.conf.Configured;
 import org.apache.nutch.crawl.CrawlDatum;
 import org.apache.nutch.crawl.CrawlDb;
 import org.apache.nutch.crawl.MapWritable;
@@ -52,7 +53,7 @@ import org.apache.nutch.util.NutchJob;
  * 
  * @author Andrzej Bialecki
  */
-public class CrawlDbConverter extends ToolBase implements Mapper {
+public class CrawlDbConverter extends Configured implements Tool, Mapper<WritableComparable,Writable,WritableComparable,Writable> {
   private static final Log LOG = LogFactory.getLog(CrawlDbConverter.class);
   
   private static final String CONVERT_META_KEY = "db.converter.with.metadata";
@@ -66,7 +67,7 @@ public class CrawlDbConverter extends ToolBase implements Mapper {
     newKey = new Text();
   }
 
-  public void map(WritableComparable key, Writable value, OutputCollector output,
+  public void map(WritableComparable key, Writable value, OutputCollector<WritableComparable,Writable> output,
       Reporter reporter) throws IOException {
     newKey.set(key.toString());
     if (withMetadata) {
@@ -97,7 +98,7 @@ public class CrawlDbConverter extends ToolBase implements Mapper {
    * @param args
    */
   public static void main(String[] args) throws Exception {
-    int res = new CrawlDbConverter().doMain(NutchConfiguration.create(), args);
+    int res = new CrawlDbConverter().run(args);
   }
 
   public int run(String[] args) throws Exception {

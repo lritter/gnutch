@@ -42,14 +42,14 @@ import org.apache.nutch.parse.ParseOutputFormat;
 import org.apache.nutch.protocol.Content;
 
 /** Splits FetcherOutput entries into multiple map files. */
-public class FetcherOutputFormat implements OutputFormat {
+public class FetcherOutputFormat implements OutputFormat<WritableComparable,Writable> {
 
   public void checkOutputSpecs(FileSystem fs, JobConf job) throws IOException {
     if (fs.exists(new Path(job.getOutputPath(), CrawlDatum.FETCH_DIR_NAME)))
       throw new IOException("Segment already fetched!");
   }
 
-  public RecordWriter getRecordWriter(final FileSystem fs,
+  public RecordWriter<WritableComparable,Writable> getRecordWriter(final FileSystem fs,
                                       final JobConf job,
                                       final String name,
                                       final Progressable progress) throws IOException {
@@ -65,9 +65,9 @@ public class FetcherOutputFormat implements OutputFormat {
       new MapFile.Writer(job, fs, fetch.toString(), Text.class, CrawlDatum.class,
           compType, progress);
     
-    return new RecordWriter() {
+    return new RecordWriter<WritableComparable,Writable>() {
         private MapFile.Writer contentOut;
-        private RecordWriter parseOut;
+        private RecordWriter<WritableComparable,Writable> parseOut;
 
         {
           if (Fetcher.isStoringContent(job)) {

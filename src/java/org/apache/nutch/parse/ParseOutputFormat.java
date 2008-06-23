@@ -44,7 +44,7 @@ import java.util.Map.Entry;
 import org.apache.hadoop.util.Progressable;
 
 /* Parse content in a segment. */
-public class ParseOutputFormat implements OutputFormat {
+public class ParseOutputFormat implements OutputFormat<WritableComparable,Writable> {
   private static final Log LOG = LogFactory.getLog(ParseOutputFormat.class);
 
   private URLFilters filters;
@@ -79,7 +79,7 @@ public class ParseOutputFormat implements OutputFormat {
       throw new IOException("Segment already parsed!");
   }
 
-  public RecordWriter getRecordWriter(FileSystem fs, JobConf job,
+  public RecordWriter<WritableComparable,Writable> getRecordWriter(FileSystem fs, JobConf job,
                                       String name, Progressable progress) throws IOException {
 
     this.filters = new URLFilters(job);
@@ -111,7 +111,7 @@ public class ParseOutputFormat implements OutputFormat {
       SequenceFile.createWriter(fs, job, crawl, Text.class, CrawlDatum.class,
           compType, progress);
     
-    return new RecordWriter() {
+    return new RecordWriter<WritableComparable,Writable>() {
 
 
         public void write(WritableComparable key, Writable value)

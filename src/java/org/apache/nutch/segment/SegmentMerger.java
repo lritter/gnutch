@@ -28,6 +28,7 @@ import org.apache.commons.logging.LogFactory;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.conf.Configured;
 import org.apache.hadoop.fs.FileSystem;
+import org.apache.hadoop.fs.FileStatus;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.MapFile;
 import org.apache.hadoop.io.SequenceFile;
@@ -110,7 +111,7 @@ import org.apache.nutch.util.NutchJob;
  * 
  * @author Andrzej Bialecki
  */
-public class SegmentMerger extends Configured implements Mapper, Reducer {
+public class SegmentMerger extends Configured implements Mapper<WritableComparable,Writable,WritableComparable,Writable>, Reducer <WritableComparable,MetaWrapper,WritableComparable,MetaWrapper>{
   private static final Log LOG = LogFactory.getLog(SegmentMerger.class);
 
   private static final String SEGMENT_PART_KEY = "part";
@@ -178,8 +179,8 @@ public class SegmentMerger extends Configured implements Mapper, Reducer {
     private static final String DEFAULT_SLICE = "default";
     
     @Override
-    public RecordWriter getRecordWriter(final FileSystem fs, final JobConf job, final String name, final Progressable progress) throws IOException {
-      return new RecordWriter() {
+	public RecordWriter<WritableComparable,Writable> getRecordWriter(final FileSystem fs, final JobConf job, final String name, final Progressable progress) throws IOException {
+	return new RecordWriter<WritableComparable,Writable>() {
         MapFile.Writer c_out = null;
         MapFile.Writer f_out = null;
         MapFile.Writer pd_out = null;
@@ -312,7 +313,7 @@ public class SegmentMerger extends Configured implements Mapper, Reducer {
   
   private Text newKey = new Text();
   
-  public void map(WritableComparable key, Writable value, OutputCollector output, Reporter reporter) throws IOException {
+  public void map(WritableComparable key, Writable value, OutputCollector<WritableComparable,Writable> output, Reporter reporter) throws IOException {
     String url = key.toString();
     if (normalizers != null) {
       try {
@@ -342,7 +343,7 @@ public class SegmentMerger extends Configured implements Mapper, Reducer {
    * important that segments be named in an increasing lexicographic order as
    * their creation time increases.
    */
-  public void reduce(WritableComparable key, Iterator values, OutputCollector output, Reporter reporter) throws IOException {
+  public void reduce(WritableComparable key, Iterator<MetaWrapper> values, OutputCollector<WritableComparable,MetaWrapper> output, Reporter reporter) throws IOException {
     CrawlDatum lastG = null;
     CrawlDatum lastF = null;
     CrawlDatum lastSig = null;
@@ -358,7 +359,7 @@ public class SegmentMerger extends Configured implements Mapper, Reducer {
     TreeMap<String, ArrayList<CrawlDatum>> linked =
       new TreeMap<String, ArrayList<CrawlDatum>>();
     while (values.hasNext()) {
-      MetaWrapper wrapper = (MetaWrapper)values.next();
+      MetaWrapper wrapper = values.next();
       Object o = wrapper.get();
       String spString = wrapper.getMeta(SEGMENT_PART_KEY);
       if (spString == null) {
@@ -626,9 +627,9 @@ public class SegmentMerger extends Configured implements Mapper, Reducer {
     boolean normalize = false;
     for (int i = 1; i < args.length; i++) {
       if (args[i].equals("-dir")) {
-        Path[] files = fs.listPaths(new Path(args[++i]), HadoopFSUtil.getPassDirectoriesFilter(fs));
+        FileStatus[] files = fs.listStatus(new Path(args[++i]), HadoopFSUtil.getPassDirectoriesFilter(fs));
         for (int j = 0; j < files.length; j++)
-          segs.add(files[j]);
+	    segs.add(files[j].getPath());
       } else if (args[i].equals("-filter")) {
         filter = true;
       } else if (args[i].equals("-normalize")) {

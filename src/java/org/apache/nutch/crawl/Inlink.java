@@ -33,6 +33,11 @@ public class Inlink implements Writable {
     this.anchor = anchor;
   }
 
+    public Inlink(Inlink i) {
+	this.fromUrl = i.getFromUrl();
+	this.anchor = i.getAnchor();
+    }
+
   public void readFields(DataInput in) throws IOException {
     fromUrl = Text.readString(in);
     anchor = Text.readString(in);

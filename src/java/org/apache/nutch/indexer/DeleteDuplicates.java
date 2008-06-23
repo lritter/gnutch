@@ -74,7 +74,7 @@ public class DeleteDuplicates extends Configured
 //      partition by md5
 //      reduce, deleting all but with highest score (or shortest url).
 
-  public static class IndexDoc implements WritableComparable {
+  public static class IndexDoc implements Cloneable, WritableComparable {
     private Text url = new Text();
     private int urlLen;
     private float score;
@@ -88,6 +88,29 @@ public class DeleteDuplicates extends Configured
       return "[url=" + url + ",score=" + score + ",time=" + time
         + ",hash=" + hash + ",index=" + index + ",doc=" + doc
         + ",keep=" + keep + "]";
+    }
+    
+    // Create a new shallow copy
+    protected Object clone()
+    {
+      try
+      {
+	return super.clone();
+      }
+      catch(CloneNotSupportedException e)
+      {
+	return null;
+      }
+    }
+
+    public IndexDoc copyConstructor()
+    {
+       IndexDoc i = (IndexDoc)clone();
+       i.url = new Text(url);
+       i.hash = new MD5Hash();
+       i.hash.set(hash);
+       i.index = new Text(index);
+       return i;
     }
     
     public void write(DataOutput out) throws IOException {
@@ -269,7 +292,7 @@ public class DeleteDuplicates extends Configured
       while (values.hasNext()) {
         IndexDoc value = values.next();
         if (latest == null) {
-          latest = value;
+	  latest = value.copyConstructor();
           continue;
         }
         if (value.time > latest.time) {
@@ -277,7 +300,7 @@ public class DeleteDuplicates extends Configured
           latest.keep = false;
           LOG.debug("-discard " + latest + ", keep " + value);
           output.collect(latest.hash, latest);
-          latest = value;
+          latest = value.copyConstructor();
         } else {
           // discard
           value.keep = false;
@@ -314,7 +337,7 @@ public class DeleteDuplicates extends Configured
           continue;
         }
         if (highest == null) {
-          highest = value;
+	  highest = value.copyConstructor();
           continue;
         }
         IndexDoc toDelete = null, toKeep = null;
@@ -334,7 +357,7 @@ public class DeleteDuplicates extends Configured
         
         toDelete.keep = false;
         output.collect(toDelete.url, toDelete);
-        highest = toKeep;
+        highest = toKeep.copyConstructor();
       }    
       LOG.debug("-keep " + highest);
       // no need to add this - in phase 2 we only process docs to delete them

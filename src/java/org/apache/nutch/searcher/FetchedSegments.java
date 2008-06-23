@@ -116,12 +116,12 @@ public class FetchedSegments implements HitSummarizer, HitContent {
 
   /** Construct given a directory containing fetcher output. */
   public FetchedSegments(FileSystem fs, String segmentsDir, Configuration conf) throws IOException {
-    Path[] segmentDirs = fs.listPaths(new Path(segmentsDir));
+    FileStatus[] segmentDirs = fs.listStatus(new Path(segmentsDir));
     this.summarizer = new SummarizerFactory(conf).getSummarizer();
 
     if (segmentDirs != null) {
         for (int i = 0; i < segmentDirs.length; i++) {
-            Path segmentDir = segmentDirs[i];
+            Path segmentDir = segmentDirs[i].getPath();
 //             Path indexdone = new Path(segmentDir, IndexSegment.DONE_NAME);
 //             if (fs.exists(indexdone) && fs.isFile(indexdone)) {
 //             	segments.put(segmentDir.getName(), new Segment(fs, segmentDir));

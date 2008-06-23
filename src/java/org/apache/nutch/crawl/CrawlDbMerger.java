@@ -64,13 +64,13 @@ public class CrawlDbMerger extends Configured implements Tool {
 
     public void reduce(Text key, Iterator<CrawlDatum> values, OutputCollector<Text, CrawlDatum> output, Reporter reporter)
             throws IOException {
-      CrawlDatum res = null;
+      CrawlDatum res = new CrawlDatum();
       long resTime = 0L;
       meta.clear();
       while (values.hasNext()) {
         CrawlDatum val = values.next();
         if (res == null) {
-          res = val;
+          res.set(val);
           resTime = schedule.calculateLastFetchTime(res);
           meta.putAll(res.getMetaData());
           continue;
@@ -80,12 +80,13 @@ public class CrawlDbMerger extends Configured implements Tool {
         if (valTime > resTime) {
           // collect all metadata, newer values override older values
           meta.putAll(val.getMetaData());
-          res = val;
+          res.set(val);
           resTime = valTime ;
         } else {
           // insert older metadata before newer
           val.getMetaData().putAll(meta);
-          meta = val.getMetaData();
+          meta.clear();
+          meta.putAll(val.getMetaData());
         }
       }
       res.setMetaData(meta);

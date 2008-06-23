@@ -49,7 +49,6 @@ import org.apache.hadoop.mapred.RecordWriter;
 import org.apache.hadoop.mapred.Reducer;
 import org.apache.hadoop.mapred.Reporter;
 import org.apache.hadoop.mapred.SequenceFileInputFormat;
-import org.apache.hadoop.mapred.SequenceFileOutputFormat;
 import org.apache.hadoop.mapred.TextOutputFormat;
 import org.apache.hadoop.mapred.lib.HashPartitioner;
 import org.apache.hadoop.mapred.lib.IdentityMapper;
@@ -58,6 +57,8 @@ import org.apache.hadoop.util.Progressable;
 import org.apache.nutch.util.NutchConfiguration;
 import org.apache.nutch.util.NutchJob;
 import org.apache.nutch.util.StringUtil;
+
+import org.apache.hadoop.extensions.FileOnlySequenceFileOutputFormat;
 
 /**
  * Read utility for the CrawlDB.
@@ -307,7 +308,7 @@ public class CrawlDbReader implements Closeable {
     job.setReducerClass(CrawlDbStatReducer.class);
 
     job.setOutputPath(tmpFolder);
-    job.setOutputFormat(SequenceFileOutputFormat.class);
+    job.setOutputFormat(FileOnlySequenceFileOutputFormat.class);
     job.setOutputKeyClass(Text.class);
     job.setOutputValueClass(LongWritable.class);
 
@@ -315,7 +316,7 @@ public class CrawlDbReader implements Closeable {
 
     // reading the result
     FileSystem fileSystem = FileSystem.get(config);
-    SequenceFile.Reader[] readers = SequenceFileOutputFormat.getReaders(config, tmpFolder);
+    SequenceFile.Reader[] readers = FileOnlySequenceFileOutputFormat.getReaders(config, tmpFolder);
 
     Text key = new Text();
     LongWritable value = new LongWritable();
@@ -435,7 +436,7 @@ public class CrawlDbReader implements Closeable {
     job.setReducerClass(IdentityReducer.class);
 
     job.setOutputPath(tempDir);
-    job.setOutputFormat(SequenceFileOutputFormat.class);
+    job.setOutputFormat(FileOnlySequenceFileOutputFormat.class);
     job.setOutputKeyClass(FloatWritable.class);
     job.setOutputValueClass(Text.class);
 

@@ -83,12 +83,11 @@ public class LinkDbMerger extends Configured implements Tool, Reducer<Text, Inli
       Iterator<Inlink> it = inlinks.iterator();
       int i = 0;
       while(it.hasNext() && i++ < end) {
-        result.add(it.next());
+	  result.add(new Inlink(it.next()));
       }
     }
     if (result.size() == 0) return;
     output.collect(key, result);
-    
   }
 
   public void configure(JobConf job) {

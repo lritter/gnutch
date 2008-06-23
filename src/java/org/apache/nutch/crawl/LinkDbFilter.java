@@ -38,7 +38,7 @@ import org.apache.nutch.net.URLNormalizers;
  * 
  * @author Andrzej Bialecki
  */
-public class LinkDbFilter implements Mapper {
+public class LinkDbFilter implements Mapper<WritableComparable,Writable,WritableComparable,Writable> {
   public static final String URL_FILTERING = "linkdb.url.filters";
 
   public static final String URL_NORMALIZING = "linkdb.url.normalizer";
@@ -73,7 +73,7 @@ public class LinkDbFilter implements Mapper {
 
   public void close() {}
 
-  public void map(WritableComparable key, Writable value, OutputCollector output, Reporter reporter) throws IOException {
+  public void map(WritableComparable key, Writable value, OutputCollector<WritableComparable,Writable> output, Reporter reporter) throws IOException {
     String url = key.toString();
     Inlinks result = new Inlinks();
     if (normalize) {

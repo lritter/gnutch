@@ -49,8 +49,7 @@ import org.apache.hadoop.util.StringUtils;
  * @see http://www.archive.org/
  * @see http://www.grub.org/
  */
-public class ArcRecordReader
-  implements RecordReader {
+public class ArcRecordReader implements RecordReader<WritableComparable,Writable> {
 
   public static final Log LOG = LogFactory.getLog(ArcRecordReader.class);
 

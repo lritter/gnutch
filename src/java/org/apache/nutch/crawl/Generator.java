@@ -30,6 +30,7 @@ import org.apache.hadoop.io.*;
 import org.apache.hadoop.conf.*;
 import org.apache.hadoop.mapred.*;
 import org.apache.hadoop.util.*;
+import org.apache.hadoop.extensions.FileOnlySequenceFileOutputFormat;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 
@@ -341,22 +342,22 @@ public class Generator extends Configured implements Tool {
     }
 
     public void reduce(Text key, Iterator<CrawlDatum> values, OutputCollector<Text, CrawlDatum> output, Reporter reporter) throws IOException {
-      CrawlDatum orig = null;
-      LongWritable genTime = null;
+	CrawlDatum orig = new CrawlDatum();
+	LongWritable genTime = new LongWritable();
       while (values.hasNext()) {
         CrawlDatum val = values.next();
         if (val.getMetaData().containsKey(Nutch.WRITABLE_GENERATE_TIME_KEY)) {
-          genTime = (LongWritable)val.getMetaData().get(Nutch.WRITABLE_GENERATE_TIME_KEY);
+	    genTime.set(((LongWritable)val.getMetaData().get(Nutch.WRITABLE_GENERATE_TIME_KEY)).get());
           if (genTime.get() != generateTime) {
-            orig = val;
-            genTime = null;
+	      orig.set(val);
+            genTime.set((long)0);
             continue;
           }
         } else {
-          orig = val;
+	    orig.set(val);
         }
       }
-      if (genTime != null) {
+      if (genTime.get() != 0) {
         orig.getMetaData().put(Nutch.WRITABLE_GENERATE_TIME_KEY, genTime);
       }
       output.collect(key, orig);
@@ -448,7 +449,7 @@ public class Generator extends Configured implements Tool {
     job.setReducerClass(Selector.class);
 
     job.setOutputPath(tempDir);
-    job.setOutputFormat(SequenceFileOutputFormat.class);
+    job.setOutputFormat(FileOnlySequenceFileOutputFormat.class);
     job.setOutputKeyClass(FloatWritable.class);
     job.setOutputKeyComparatorClass(DecreasingFloatComparator.class);
     job.setOutputValueClass(SelectorEntry.class);
@@ -460,7 +461,7 @@ public class Generator extends Configured implements Tool {
     }
     
     // check that we selected at least some entries ...
-    SequenceFile.Reader[] readers = SequenceFileOutputFormat.getReaders(job, tempDir);
+    SequenceFile.Reader[] readers = FileOnlySequenceFileOutputFormat.getReaders(job, tempDir);
     boolean empty = true;
     if (readers != null && readers.length > 0) {
       for (int num = 0; num < readers.length; num++) {

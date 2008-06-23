@@ -40,6 +40,7 @@ import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.conf.Configured;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.fs.FileStatus;
 import org.apache.hadoop.io.MapFile;
 import org.apache.hadoop.io.SequenceFile;
 import org.apache.hadoop.io.Text;
@@ -69,7 +70,7 @@ import org.apache.nutch.util.NutchConfiguration;
 import org.apache.nutch.util.NutchJob;
 
 /** Dump the content of a segment. */
-public class SegmentReader extends Configured implements Reducer {
+public class SegmentReader extends Configured implements Reducer<WritableComparable,NutchWritable,WritableComparable,Writable> {
 
   public static final Log LOG = LogFactory.getLog(SegmentReader.class);
 
@@ -78,10 +79,10 @@ public class SegmentReader extends Configured implements Reducer {
   private boolean co, fe, ge, pa, pd, pt;
   private FileSystem fs;
 
-  public static class InputCompatMapper extends MapReduceBase implements Mapper {
+  public static class InputCompatMapper extends MapReduceBase implements Mapper<WritableComparable,Writable,WritableComparable,Writable> {
     private Text newKey = new Text();
 
-    public void map(WritableComparable key, Writable value, OutputCollector collector, Reporter reporter) throws IOException {
+      public void map(WritableComparable key, Writable value, OutputCollector<WritableComparable,Writable> collector, Reporter reporter) throws IOException {
       // convert on the fly from old formats with UTF8 keys
       if (key instanceof UTF8) {
         newKey.set(key.toString());
@@ -102,7 +103,7 @@ public class SegmentReader extends Configured implements Reducer {
       if (fs.exists(segmentDumpFile)) fs.delete(segmentDumpFile);
 
       final PrintStream printStream = new PrintStream(fs.create(segmentDumpFile));
-      return new RecordWriter() {
+      return new RecordWriter<WritableComparable,Writable>() {
         public synchronized void write(WritableComparable key, Writable value) throws IOException {
           printStream.println(value);
         }
@@ -162,14 +163,14 @@ public class SegmentReader extends Configured implements Reducer {
   
   public void close() {}
 
-  public void reduce(WritableComparable key, Iterator values, OutputCollector output, Reporter reporter)
+    public void reduce(WritableComparable key, Iterator<NutchWritable> values, OutputCollector<WritableComparable,Writable> output, Reporter reporter)
           throws IOException {
     StringBuffer dump = new StringBuffer();
 
     dump.append("\nRecno:: ").append(recNo++).append("\n");
     dump.append("URL:: " + key.toString() + "\n");
     while (values.hasNext()) {
-      Writable value = ((NutchWritable) values.next()).get(); // unwrap
+      Writable value = values.next().get(); // unwrap
       if (value instanceof CrawlDatum) {
         dump.append("\nCrawlDatum::\n").append(((CrawlDatum) value).toString());
       } else if (value instanceof Content) {
@@ -220,7 +221,7 @@ public class SegmentReader extends Configured implements Reducer {
 
     // remove the old file
     fs.delete(dumpFile);
-    Path[] files = fs.listPaths(tempDir, HadoopFSUtil.getPassAllFilter());
+    FileStatus[] files = fs.listStatus(tempDir, HadoopFSUtil.getPassAllFilter());
 
     PrintWriter writer = null;
     int currentRecordNumber = 0;
@@ -228,7 +229,7 @@ public class SegmentReader extends Configured implements Reducer {
       writer = new PrintWriter(new BufferedWriter(new OutputStreamWriter(fs.create(dumpFile))));
       try {
         for (int i = 0; i < files.length; i++) {
-          Path partFile = (Path) files[i];
+	    Path partFile = files[i].getPath();
           try {
             currentRecordNumber = append(fs, job, partFile, writer, currentRecordNumber);
           } catch (IOException exception) {
@@ -559,9 +560,11 @@ public class SegmentReader extends Configured implements Reducer {
           if (args[i] == null) continue;
           if (args[i].equals("-dir")) {
             Path dir = new Path(args[++i]);
-            Path[] files = fs.listPaths(dir, HadoopFSUtil.getPassDirectoriesFilter(fs));
+            FileStatus[] files = fs.listStatus(dir, HadoopFSUtil.getPassDirectoriesFilter(fs));
             if (files != null && files.length > 0) {
-              dirs.addAll(Arrays.asList(files));
+	        for(int j = 0;j < files.length;j++) {
+		    dirs.add(files[j].getPath());
+	        }
             }
           } else dirs.add(new Path(args[i]));
         }

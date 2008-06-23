@@ -32,7 +32,7 @@ import org.apache.nutch.scoring.ScoringFilterException;
 import org.apache.nutch.scoring.ScoringFilters;
 
 /** Merge new page entries with existing entries. */
-public class CrawlDbReducer implements Reducer {
+public class CrawlDbReducer implements Reducer<WritableComparable,Writable,WritableComparable,Writable> {
   public static final Log LOG = LogFactory.getLog(CrawlDbReducer.class);
   
   private int retryMax;
@@ -55,8 +55,8 @@ public class CrawlDbReducer implements Reducer {
 
   public void close() {}
 
-  public void reduce(WritableComparable key, Iterator values,
-                     OutputCollector output, Reporter reporter)
+  public void reduce(WritableComparable key, Iterator<Writable> values,
+                     OutputCollector<WritableComparable,Writable> output, Reporter reporter)
     throws IOException {
 
     CrawlDatum fetch = null;
@@ -68,27 +68,27 @@ public class CrawlDbReducer implements Reducer {
       CrawlDatum datum = (CrawlDatum)values.next();
       if (CrawlDatum.hasDbStatus(datum)) {
         if (old == null) {
-          old = datum;
+	  old = datum.shallowCopy();
         } else {
           // always take the latest version
-          if (old.getFetchTime() < datum.getFetchTime()) old = datum;
+	  if (old.getFetchTime() < datum.getFetchTime()) old = datum.shallowCopy();
         }
         continue;
       }
 
       if (CrawlDatum.hasFetchStatus(datum)) {
         if (fetch == null) {
-          fetch = datum;
+	  fetch = datum.shallowCopy();
         } else {
           // always take the latest version
-          if (fetch.getFetchTime() < datum.getFetchTime()) fetch = datum;
+	  if (fetch.getFetchTime() < datum.getFetchTime()) fetch = datum.shallowCopy();
         }
         continue;
       }
 
       switch (datum.getStatus()) {                // collect other info
       case CrawlDatum.STATUS_LINKED:
-        linked.add(datum);
+	linked.add(datum.shallowCopy());
         break;
       case CrawlDatum.STATUS_SIGNATURE:
         signature = datum.getSignature();

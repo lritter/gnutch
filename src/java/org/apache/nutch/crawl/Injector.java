@@ -102,21 +102,28 @@ public class Injector extends Configured implements Tool {
     public void reduce(Text key, Iterator<CrawlDatum> values,
                        OutputCollector<Text, CrawlDatum> output, Reporter reporter)
       throws IOException {
-      CrawlDatum old = null;
-      CrawlDatum injected = null;
+
+	CrawlDatum old = new CrawlDatum();
+	CrawlDatum injected = new CrawlDatum();
+
+	boolean oldNull = false;
+
       while (values.hasNext()) {
         CrawlDatum val = values.next();
         if (val.getStatus() == CrawlDatum.STATUS_INJECTED) {
-          injected = val;
+	    injected.set(val);
           injected.setStatus(CrawlDatum.STATUS_DB_UNFETCHED);
         } else {
-          old = val;
+	    old.set(val);
+	    oldNull = true;
         }
       }
       CrawlDatum res = null;
-      if (old != null) res = old; // don't overwrite existing value
-      else res = injected;
-
+      if (oldNull) {
+	  res = old; // don't overwrite existing value
+      } else {
+	  res = injected;
+      }
       output.collect(key, res);
     }
   }
@@ -144,6 +151,7 @@ public class Injector extends Configured implements Tool {
     if (LOG.isInfoEnabled()) {
       LOG.info("Injector: Converting injected urls to crawl db entries.");
     }
+
     JobConf sortJob = new NutchJob(getConf());
     sortJob.setJobName("inject " + urlDir);
     sortJob.setInputPath(urlDir);

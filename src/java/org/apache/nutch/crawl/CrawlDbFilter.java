@@ -37,7 +37,7 @@ import org.apache.nutch.net.URLNormalizers;
  * 
  * @author Andrzej Bialecki
  */
-public class CrawlDbFilter implements Mapper {
+public class CrawlDbFilter implements Mapper<WritableComparable,Writable,WritableComparable,Writable> {
   public static final String URL_FILTERING = "crawldb.url.filters";
 
   public static final String URL_NORMALIZING = "crawldb.url.normalizers";
@@ -72,7 +72,7 @@ public class CrawlDbFilter implements Mapper {
   
   private Text newKey = new Text();
 
-  public void map(WritableComparable key, Writable value, OutputCollector output, Reporter reporter) throws IOException {
+  public void map(WritableComparable key, Writable value, OutputCollector<WritableComparable,Writable> output, Reporter reporter) throws IOException {
 
     String url = key.toString();
     if (urlNormalizers) {

@@ -141,9 +141,14 @@ public class Crawl {
       }
 
       // index, dedup & merge
-      indexer.index(indexes, crawlDb, linkDb, fs.listPaths(segments, HadoopFSUtil.getPassAllFilter()));
+      Path[] paths = FileUtil.stat2Paths(fs.listStatus(segments, HadoopFSUtil.getPassAllFilter()));
+
+      indexer.index(indexes, crawlDb, linkDb, paths);
       dedup.dedup(new Path[] { indexes });
-      merger.merge(fs.listPaths(indexes, HadoopFSUtil.getPassAllFilter()), index, tmpDir);
+      
+
+      paths = FileUtil.stat2Paths(fs.listStatus(indexes, HadoopFSUtil.getPassAllFilter()));
+      merger.merge(paths, index, tmpDir);
     } else {
       LOG.warn("No URLs to fetch - check your seed list and URL filters.");
     }

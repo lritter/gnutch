@@ -54,20 +54,20 @@ public class FsDirectory extends Directory {
       throw new IOException(directory + " not a directory");
 
     // clear old files
-    Path[] files = fs.listPaths(directory, HadoopFSUtil.getPassAllFilter());
+    FileStatus[] files = fs.listStatus(directory, HadoopFSUtil.getPassAllFilter());
     for (int i = 0; i < files.length; i++) {
-      if (!fs.delete(files[i]))
+	if (!fs.delete(files[i].getPath(),false))
         throw new IOException("Cannot delete " + files[i]);
     }
   }
 
   public String[] list() throws IOException {
-    Path[] files = fs.listPaths(directory, HadoopFSUtil.getPassAllFilter());
+    FileStatus[] files = fs.listStatus(directory, HadoopFSUtil.getPassAllFilter());
     if (files == null) return null;
 
     String[] result = new String[files.length];
     for (int i = 0; i < files.length; i++) {
-      result[i] = files[i].getName();
+	result[i] = files[i].getPath().getName();
     }
     return result;
   }

@@ -433,4 +433,8 @@ public class CrawlDatum implements WritableComparable, Cloneable {
       throw new RuntimeException(e);
     }
   }
+
+  public CrawlDatum shallowCopy() {
+      return (CrawlDatum)clone();
+  }
 }
