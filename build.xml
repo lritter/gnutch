@@ -91,7 +91,7 @@
   <!-- ====================================================== -->
   <!-- Compile the Java files                                 -->
   <!-- ====================================================== -->
-  <target name="compile" depends="compile-core, compile-plugins"/>
+  <target name="compile" depends="compile-core, compile-plugins, compile-contrib"/>
 
   <target name="compile-core" depends="init">
     <javac 
@@ -110,6 +110,10 @@
 
   <target name="compile-plugins">
     <ant dir="src/plugin" target="deploy" inheritAll="false"/>
+  </target>
+
+  <target name="compile-contrib">
+    <ant dir="src/contrib" target="deploy" inheritAll="false"/>
   </target>
 
   <target name="generate-src" depends="init">

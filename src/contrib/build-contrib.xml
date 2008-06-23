@@ -158,49 +158,6 @@
   </target>
 
   <!-- ================================================================== -->
-  <!-- Compile test code                                                  --> 
-  <!-- ================================================================== -->
-<!--  <target name="compile-test" depends="compile" if="test.available"> -->
-<!--    <javac  -->
-<!--     encoding="${build.encoding}"  -->
-<!--     srcdir="${src.test}" -->
-<!--     includes="**/*.java" -->
-<!--     destdir="${build.test}" -->
-<!--     debug="${javac.debug}" -->
-<!--     optimize="${javac.optimize}" -->
-<!--     target="${javac.version}" -->
-<!--     source="${javac.version}" -->
-<!--     deprecation="${javac.deprecation}"> -->
-<!--      <classpath refid="test.classpath"/> -->
-<!--    </javac>     -->
-<!--  </target> -->
-<!-- -->
-<!--  <!-- ================================================================== --> -->
-<!--  <!-- Run unit tests                                                     -->  -->
-<!--  <!-- ================================================================== --> -->
-<!--  <target name="test" depends="compile-test, deploy" if="test.available"> -->
-<!--    <echo message="Testing contrib: ${name}"/> -->
-<!-- -->
-<!--    <junit printsummary="yes" haltonfailure="no" fork="yes" -->
-<!--      errorProperty="tests.failed" failureProperty="tests.failed"> -->
-<!--      <sysproperty key="test.data" value="${build.test}/data"/> -->
-<!--      <sysproperty key="test.input" value="${root}/data"/> -->
-<!--      <classpath refid="test.classpath"/> -->
-<!--      <formatter type="plain" /> -->
-<!--      <batchtest todir="${build.test}" unless="testcase"> -->
-<!--        <fileset dir="${src.test}" -->
-<!--                 includes="**/Test*.java" excludes="**/${test.exclude}.java" /> -->
-<!--      </batchtest> -->
-<!--      <batchtest todir="${build.test}" if="testcase"> -->
-<!--        <fileset dir="${src.test}" includes="**/${testcase}.java"/> -->
-<!--      </batchtest> -->
-<!--    </junit> -->
-<!-- -->
-<!--    <fail if="tests.failed">Tests failed!</fail> -->
-<!-- -->
-<!--  </target>    -->
-
-  <!-- ================================================================== -->
   <!-- Clean.  Delete the build files, and their directories              -->
   <!-- ================================================================== -->
   <target name="clean">
