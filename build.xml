@@ -66,26 +66,6 @@
       <fileset dir="${conf.dir}" includes="**/*.template"/>
       <mapper type="glob" from="*.template" to="*"/>
     </copy>
-
-    <!-- unpack hadoop scripts from hadoop jar into bin directory -->
-    <mkdir dir="${build.dir}/hadoop"/>
-    <unjar dest="${build.dir}/hadoop">
-      <fileset dir="${lib.dir}" includes="hadoop*.jar"/>
-      <patternset includes="bin.tgz"/>
-    </unjar>
-    
-    <untar src="${build.dir}/hadoop/bin.tgz" dest="bin" compression="gzip"/>
-    <!-- fix broken library paths with spaces -->
-    <replace file="bin/hadoop" token="PlatformName" value="PlatformName | sed -e 's/ /_/g'"/>
-    <chmod dir="bin" perm="ugo+rx" includes="*.sh,hadoop"/>
-
-    <!-- unpack hadoop webapp from hadoop jar into build directory -->
-    <mkdir dir="${build.dir}/webapps"/>
-    <unjar dest="${build.dir}">
-      <fileset dir="${lib.dir}" includes="hadoop*.jar"/>
-      <patternset includes="webapps/**"/>
-    </unjar>
-
   </target>
 
   <!-- ====================================================== -->
@@ -157,6 +137,7 @@
       <zipfileset dir="${lib.dir}" prefix="lib"
                   includes="**/*.jar" excludes="hadoop-*.jar"/>
       <zipfileset dir="${build.plugins}" prefix="plugins"/>
+      <zipfileset dir="${build.contribs}" prefix=""/>
     </jar>
   </target>
 
@@ -183,7 +164,6 @@
       <lib dir="${lib.dir}">
 	<include name="lucene*.jar"/>
 	<include name="taglibs-*.jar"/>
- 	<include name="hadoop-*.jar"/>
 	<include name="dom4j-*.jar"/>
 	<include name="xerces-*.jar"/>
         <include name="tika-*.jar"/>      	
@@ -371,7 +351,6 @@
       
       <link href="${javadoc.link.java}"/>
       <link href="${javadoc.link.lucene}"/>
-      <link href="${javadoc.link.hadoop}"/>
       
       <classpath refid="classpath"/>
     	<classpath>
