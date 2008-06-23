@@ -25,6 +25,7 @@ import java.io.DataOutput;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.zip.InflaterInputStream;
+import java.nio.charset.CharacterCodingException;
 
 //Hadoop imports
 import org.apache.hadoop.conf.Configuration;
@@ -41,7 +42,11 @@ import org.apache.nutch.metadata.Metadata;
 import org.apache.nutch.util.MimeUtil;
 import org.apache.nutch.util.NutchConfiguration;
 
-public final class Content implements Writable{
+import org.json.JSONString;
+import org.json.JSONStringer;
+import org.json.JSONException;
+
+public final class Content implements Writable, JSONString {
 
   public static final String DIR_NAME = "content";
 
@@ -244,7 +249,41 @@ public final class Content implements Writable{
     buffer.append(new String(content)); // try default encoding
 
     return buffer.toString();
+  }
 
+  public String toJSONString() {
+    try {
+      JSONStringer s = new JSONStringer();
+
+      s.object().key("version").value(version);
+      s.key("url").value(url);
+      s.key("base").value(base);
+      s.key("content-type").value(contentType);
+      s.key("metadata").value(metadata);
+      String b;
+      try {
+
+	b = Text.decode(content);
+
+      } catch(CharacterCodingException e) {
+
+	b = new String(content);
+        s.key("decoding error");
+        s.value(e.toString());
+
+      }
+      
+      s.key("content");
+      s.value(b);
+      s.endObject();
+      
+      return s.toString();
+
+    } catch(JSONException e) {
+
+	throw new RuntimeException(e);
+
+    }
   }
 
   public static void main(String argv[]) throws Exception {
@@ -282,5 +321,4 @@ public final class Content implements Writable{
   private String getContentType(String typeName, String url, byte[] data) {
     return this.mimeTypes.autoResolveContentType(typeName, url, data);
   }
-
 }
