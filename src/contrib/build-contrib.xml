@@ -83,7 +83,7 @@
 
   <!--
    ! Used to build contrib compilation dependencies
-   ! (to be overridden by plugins)
+   ! (to be overridden by contribs)
    !-->
   <target name="deps-jar"/>
 
