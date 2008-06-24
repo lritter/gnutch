@@ -137,7 +137,7 @@
       <zipfileset dir="${lib.dir}" prefix="lib"
                   includes="**/*.jar" excludes="hadoop-*.jar"/>
       <zipfileset dir="${build.plugins}" prefix="plugins"/>
-      <zipfileset dir="build/streaming"/>
+      <zipfileset dir="build/streaming/classes"/>
     </jar>
   </target>
 
