@@ -132,3 +132,4 @@ public class CrawlTask {
     if (LOG.isInfoEnabled()) { LOG.info("crawl finished: " + dir); }
   }
 }
+
